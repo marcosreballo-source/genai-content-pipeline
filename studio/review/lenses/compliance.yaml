@@ -1,0 +1,22 @@
+id: compliance
+name: Regras, legal e convivência
+question: Está de acordo com regras, contratos e direitos das pessoas?
+applies_to:
+- deck
+- document
+criteria:
+- id: CMP-1
+  text: Regras coerentes com regimento interno, convenção ou contrato
+  severity_hint: blocker
+- id: CMP-2
+  text: Linguagem respeitosa e não discriminatória
+  severity_hint: blocker
+- id: CMP-3
+  text: 'Dados pessoais protegidos (LGPD): nada de nomes, telefones ou fotos sem consentimento'
+  severity_hint: blocker
+- id: CMP-4
+  text: Penalidades e procedimentos claros, previstos e proporcionais
+  severity_hint: major
+- id: CMP-5
+  text: Informações do imóvel/contexto corretas (endereço, horários, contatos)
+  severity_hint: blocker

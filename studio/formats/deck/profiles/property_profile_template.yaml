@@ -1,0 +1,24 @@
+# Perfil do imóvel (property profile): fonte ÚNICA das particularidades usadas em manuais de convivência.
+# Copie para <job>/assets/property_profile.yaml e preencha com o usuário. Nada fora daqui ou do regimento pode virar regra.
+id: IMV-001
+nome: ""                     # ex.: Residencial Jacarandá
+endereco: ""                 # usado só na capa/contatos
+tipo: ""                     # casa compartilhada | prédio | kitnets | república ...
+unidades: 0
+documentos_base:             # regimento interno, convenção, contrato (registre na Source Library e cite)
+  - {fonte: "SRC-...", descricao: "Regimento interno, versão 2026"}
+contatos:                    # sem telefones pessoais de moradores (LGPD)
+  administracao: {nome: "", canal: "", horario: ""}
+  emergencia: {canal: ""}
+  manutencao: {canal: "", prazo_padrao: ""}
+horarios:
+  silencio: ""               # ex.: 22h às 8h
+  areas_comuns: []           # [{area: lavanderia, horario: "8h-22h", regras: ["..."]}]
+lixo: {local: "", dias_coleta: [], reciclagem: ""}
+acesso: {chaves: "", visitantes: "", encomendas: ""}
+animais: ""                  # permitido? condições (conforme regimento)
+mudancas_obras: ""
+penalidades:                 # somente as previstas no documento-base
+  - {infracao: "", medida: "", base: "SRC-...#C0001"}
+particularidades: []         # coisas próprias deste endereço (ex.: portão automático, cisterna, vaga única)
+idioma_tom: "acolhedor e direto"

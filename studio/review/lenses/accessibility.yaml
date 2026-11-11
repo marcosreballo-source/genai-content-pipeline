@@ -1,0 +1,20 @@
+id: accessibility
+name: Acessibilidade
+question: Pessoas com necessidades diferentes conseguem usar?
+applies_to:
+- deck
+- document
+- web
+criteria:
+- id: ACC-1
+  text: Contraste e tamanhos mínimos
+  severity_hint: major
+- id: ACC-2
+  text: Não depende só de cor para transmitir significado
+  severity_hint: minor
+- id: ACC-3
+  text: Linguagem simples quando o público é amplo
+  severity_hint: minor
+- id: ACC-4
+  text: Texto alternativo ou legenda em imagens importantes
+  severity_hint: minor

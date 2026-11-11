@@ -1,0 +1,38 @@
+id: publico-simposio
+name: Pesquisador(a) na plateia de simpósio, genérico
+context: Assiste várias falas seguidas; quer a ideia central rápido e algo que possa usar.
+goals:
+- entender a ideia em 2 minutos
+- saber se é aplicável ao seu trabalho
+priorities:
+  narrative: 0.3
+  audience: 0.25
+  research: 0.25
+  visual: 0.2
+rubric:
+- id: R1
+  text: Mensagem central clara
+  weight: 0.35
+- id: R2
+  text: Resultados convincentes
+  weight: 0.3
+- id: R3
+  text: Clareza visual
+  weight: 0.2
+- id: R4
+  text: Aplicabilidade
+  weight: 0.15
+typical_questions:
+- Funciona com dados de outro domínio?
+- Qual a principal limitação?
+red_flags:
+- começar pelos detalhes
+- slides ilegíveis
+- fala que estoura o tempo
+tone: direto
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

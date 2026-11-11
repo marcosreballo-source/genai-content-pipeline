@@ -1,0 +1,39 @@
+slides:
+- id: SL-13
+  archetype: timeline
+  title: "Com a extensão, a validação em campo termina em fevereiro"
+  events:
+    - {when: "Out/26", label: "3º sensor instalado", detail: "Fornecedor alternativo"}
+    - {when: "Nov/26", label: "Coleta em campo", detail: "4 semanas, 3 linhas"}
+    - {when: "Dez/26", label: "Ajuste do limiar", detail: "Com operadores"}
+    - {when: "Fev/27", label: "Relatório final", detail: "Go/no-go do rollout"}
+- id: SL-14
+  archetype: comparison
+  title: "Estender 2 meses é a opção de menor risco"
+  columns:
+    - {heading: "Encerrar agora", items: ["Sem validação em campo", "Risco alto no rollout"]}
+    - {heading: "Estender 2 meses", items: ["Validação com 3 linhas", "Custo +R$ 48 mil", "Decisão em fev/27"], highlight: true}
+    - {heading: "Estender 6 meses", items: ["Cobre sazonalidade completa", "Custo +R$ 140 mil"]}
+- id: SL-15
+  archetype: statement
+  statement: "Pedimos 2 meses de extensão para validar em campo antes do rollout."
+  support: "Sem campo, o go/no-go de fevereiro seria baseado só em dados de laboratório."
+- id: SL-16
+  archetype: big_number
+  title: "O custo da extensão é pequeno perto do risco evitado"
+  value: "R$ 48 mil"
+  label: "Custo total da extensão de 2 meses"
+  context: "≈ 4% do orçamento do projeto; uma parada não detectada custa ~R$ 300 mil ao cliente"
+  sources: [SRC-orcamento-2026#C001]
+- id: SL-17
+  archetype: quote
+  quote: "Se o alerta chegar 10 minutos antes, a gente evita parar a linha inteira."
+  author: "Supervisor de manutenção"
+  role: "Cliente-piloto, entrevista de 15/09"
+- id: SL-18
+  archetype: team
+  title: "Equipe do projeto"
+  members:
+    - {name: "Marcos Reballo", role: "Pesquisador", detail: "Modelagem e avaliação"}
+    - {name: "Ana Souza", role: "Eng. de dados", detail: "Pipeline e borda"}
+    - {name: "João Lima", role: "Líder técnico", detail: "Arquitetura"}

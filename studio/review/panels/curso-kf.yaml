@@ -1,0 +1,19 @@
+id: curso-kf
+name: Curso da Knowledge Factory
+personas:
+- id: aluno-curso
+  weight: 2
+- id: especialista-tecnico-curso
+  weight: 2
+lenses:
+- pedagogy
+- technical
+- evidence
+- consistency
+- kt
+- audience
+overview_lenses:
+- pedagogy
+- consistency
+max_majors: 3
+calibration_hint: Use o learner da EDS do projeto para dar contexto à persona aluno-curso.

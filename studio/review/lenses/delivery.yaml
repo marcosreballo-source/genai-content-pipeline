@@ -1,0 +1,19 @@
+id: delivery
+name: Fala e roteiro
+question: A apresentação funciona falada, no tempo, diante de perguntas?
+applies_to:
+- deck
+- script
+criteria:
+- id: DEL-1
+  text: Notas de fala complementam o slide (não o leem)
+  severity_hint: major
+- id: DEL-2
+  text: Tempo de fala estimado compatível com a duração
+  severity_hint: major
+- id: DEL-3
+  text: Transições entre partes explícitas
+  severity_hint: minor
+- id: DEL-4
+  text: Respostas preparadas para as perguntas prováveis
+  severity_hint: major

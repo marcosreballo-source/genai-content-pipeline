@@ -1,0 +1,21 @@
+id: consistency
+name: Consistência
+question: As partes concordam entre si?
+applies_to:
+- deck
+- document
+- notebook
+- exam
+criteria:
+- id: CON-1
+  text: Mesmo conceito, mesmo nome em todo o material
+  severity_hint: major
+- id: CON-2
+  text: Mesmos números em todos os lugares
+  severity_hint: blocker
+- id: CON-3
+  text: Sem contradição entre seções, slides ou materiais
+  severity_hint: blocker
+- id: CON-4
+  text: Referências cruzadas corretas (figuras, seções, slides)
+  severity_hint: minor

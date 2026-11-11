@@ -1,0 +1,17 @@
+id: simposio-paper
+name: Apresentação de paper em simpósio
+personas:
+- id: publico-simposio
+  weight: 2
+- id: banca-membro-interno
+  weight: 1
+lenses:
+- narrative
+- research
+- audience
+- visual
+- delivery
+overview_lenses:
+- narrative
+max_majors: 3
+calibration_hint: Calibre com a chamada (call) e o formato da sessão (tempo, perguntas).

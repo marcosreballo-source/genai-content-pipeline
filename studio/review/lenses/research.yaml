@@ -1,0 +1,25 @@
+id: research
+name: Rigor de pesquisa
+question: Isto passaria numa banca ou num bom revisor?
+applies_to:
+- deck
+- document
+criteria:
+- id: RES-1
+  text: Pergunta de pesquisa ou hipótese explícita
+  severity_hint: blocker
+- id: RES-2
+  text: Contribuição/novidade clara frente ao estado da arte
+  severity_hint: blocker
+- id: RES-3
+  text: Metodologia descrita o suficiente para replicar
+  severity_hint: major
+- id: RES-4
+  text: Avaliação com baselines, métricas, significância e ameaças à validade
+  severity_hint: major
+- id: RES-5
+  text: Conclusões não extrapolam os resultados
+  severity_hint: major
+- id: RES-6
+  text: Trabalhos relacionados atualizados e tratados com justiça
+  severity_hint: minor

@@ -1,0 +1,16 @@
+id: pitch-investidor
+name: Captação com investidores
+personas:
+- id: investidor-vc-seed
+  weight: 2
+- id: investidor-anjo
+  weight: 1
+lenses:
+- persuasion
+- evidence
+- consistency
+- narrative
+overview_lenses:
+- persuasion
+max_majors: 3
+calibration_hint: Calibre com a tese do fundo/anjo e feedbacks de reuniões anteriores.

@@ -1,0 +1,20 @@
+id: qff-aula
+name: Painel da Aula Qiskit Fall Fest
+personas:
+- id: participante-oficina-iniciante
+  weight: 2
+- id: especialista-tecnico-curso
+  weight: 2
+- id: aluno-curso
+  weight: 1
+lenses:
+- pedagogy
+- technical
+- evidence
+- consistency
+- audience
+overview_lenses:
+- pedagogy
+- consistency
+max_majors: 3
+calibration_hint: Avaliar a clareza didática, a precisão da API Qiskit 2.x, a transição entre blocos e o alinhamento com os objetivos da aula.

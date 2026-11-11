@@ -1,0 +1,32 @@
+{
+  "research_id": "<research_id>",
+  "discipline_id": "<discipline_id>",
+  "raw_dir": "<pasta de materiais brutos, ex.: PUB>",
+  "deliverable": {
+    "type": "levantamento_bibliografico | relatorio_atividades | artigo | projeto",
+    "assignment_id": "<ex.: levantamento_bibliografico>",
+    "citation_style": "ABNT | APA | IEEE | ACM",
+    "language": "pt-BR | en",
+    "advisor": "<nome da orientadora/orientador>",
+    "deadline": "<AAAA-MM-DD ou null>"
+  },
+  "current_phase": "F0",
+  "current_step": "0.1",
+  "phases": {
+    "F0_configuracao": {"status": "pending"},
+    "F1_corpus": {"status": "pending", "gate_exit_code": null},
+    "F2_ingestao": {"status": "pending", "queue": [], "done": [], "skipped_with_user_decision": []},
+    "F3_blueprint": {"status": "pending"},
+    "F4_protocolo_busca": {"status": "pending", "rounds": 0, "max_rounds": 2, "skipped_reason": null},
+    "F5_sintese": {"status": "pending", "subthemes": [], "done": []},
+    "F6_redacao": {"status": "pending", "fragments": [], "done": []},
+    "F7_citacoes": {"status": "pending"},
+    "F8_revisao": {"status": "pending", "iteration": 0, "scores": []},
+    "F9_entrega": {"status": "pending"}
+  },
+  "decisions": [
+    {"date": "<AAAA-MM-DD>", "phase": "<Fx>", "decision": "<o que o usuário decidiu>"}
+  ],
+  "next_action": "<frase imperativa descrevendo EXATAMENTE o próximo passo, ex.: 'F2: ingerir Projeto-APR-Mirela_Cazzolato.pdf páginas 1-15'>"
+}
+

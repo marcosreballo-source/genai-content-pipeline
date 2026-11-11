@@ -1,0 +1,59 @@
+slides:
+- id: SL-07
+  archetype: process
+  title: "O pipeline tem quatro etapas, todas executáveis na borda"
+  steps:
+    - {label: "Coleta", detail: "Janelas de 2 s a 1 kHz por sensor"}
+    - {label: "Normalização", detail: "Z-score por equipamento e turno"}
+    - {label: "Modelo", detail: "Autoencoder convolucional 1D quantizado"}
+    - {label: "Alerta", detail: "Limiar adaptativo com histerese"}
+- id: SL-08
+  archetype: equation
+  title: "O score combina erro de reconstrução e desvio do histórico"
+  latex: "s_t = \\alpha \\, \\| x_t - \\hat{x}_t \\|_2^2 + (1-\\alpha) \\, \\frac{|e_t - \\mu_e|}{\\sigma_e}"
+  explanation: ["α = 0,7 escolhido por validação cruzada", "Alerta quando s_t > p99 da última semana"]
+- id: SL-09
+  archetype: diagram
+  title: "A arquitetura separa inferência na borda de re-treino na nuvem"
+  mermaid: |
+    flowchart TB
+      S[Sensores] --> G[Gateway de borda]
+      G --> M[Modelo quantizado]
+      M -->|alerta| O[Painel de operação]
+      G -->|amostras| C[(Data lake)]
+      C --> T[Re-treino mensal]
+      T -->|novo modelo| M
+  caption: "Fluxo de dados e de atualização do modelo"
+- id: SL-10
+  archetype: code
+  title: "O treino usa early stopping e quantização pós-treino"
+  language: python
+  code: |
+    # treino com parada antecipada
+    model = ConvAE(channels=4, latent=32)
+    trainer = Trainer(max_epochs=40, callbacks=[EarlyStopping("val_loss", patience=4)])
+    trainer.fit(model, train_dl, val_dl)
+
+    # quantização para a borda
+    qmodel = torch.ao.quantization.quantize_dynamic(model, {nn.Linear}, dtype=torch.qint8)
+    torch.save(qmodel.state_dict(), "edge_model_v3.pt")
+  caption: "train.py, linhas 41–49"
+- id: SL-11
+  archetype: two_column
+  title: "Os dois riscos principais têm mitigação em andamento"
+  left:
+    heading: "Riscos"
+    bullets: ["Atraso na instalação do 3º sensor-piloto", "Deriva de dados com a troca de turno de verão"]
+  right:
+    heading: "Mitigações"
+    bullets: ["Fornecedor alternativo já homologado", "Re-treino mensal automático com janela deslizante"]
+- id: SL-12
+  archetype: table
+  title: "O modelo proposto é o único que cumpre acurácia e latência"
+  columns: ["Modelo", "Acurácia", "Latência", "Tamanho"]
+  rows:
+    - ["Isolation Forest", "79%", "12 ms", "2 MB"]
+    - ["LSTM-AE", "88%", "71 ms", "18 MB"]
+    - ["Conv-AE quantizado", "91%", "38 ms", "4 MB"]
+  highlight_row: 2
+  source: "Benchmark interno, set/2026"

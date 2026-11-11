@@ -1,0 +1,23 @@
+id: narrative
+name: Narrativa e argumento
+question: A história se sustenta do início ao fim para este público?
+applies_to:
+- deck
+- document
+- script
+criteria:
+- id: NAR-1
+  text: A abertura estabelece problema e relevância para ESTE público logo no início
+  severity_hint: major
+- id: NAR-2
+  text: 'Títulos-mensagem: cada título afirma uma conclusão, não um rótulo'
+  severity_hint: major
+- id: NAR-3
+  text: 'Fio condutor: cada parte avança o argumento; sem desvios'
+  severity_hint: major
+- id: NAR-4
+  text: O fechamento retoma a mensagem e diz o que o público deve fazer ou decidir
+  severity_hint: major
+- id: NAR-5
+  text: Quantidade de material compatível com o tempo ou o tamanho
+  severity_hint: major

@@ -1,0 +1,19 @@
+id: disciplina-icmc
+name: Trabalho/apresentação de disciplina (ICMC/USP)
+personas:
+- id: prof-disciplina
+  weight: 2
+- id: monitor-disciplina
+  weight: 1
+lenses:
+- technical
+- format
+- evidence
+- narrative
+- visual
+- delivery
+overview_lenses:
+- narrative
+- format
+max_majors: 3
+calibration_hint: Calibre com o enunciado, a rubrica e comentários anteriores do(a) professor(a).

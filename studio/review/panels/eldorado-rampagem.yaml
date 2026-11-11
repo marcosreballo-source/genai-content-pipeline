@@ -1,0 +1,19 @@
+id: eldorado-rampagem
+name: Curso de rampagem / oficina de pesquisa
+personas:
+- id: participante-oficina-iniciante
+  weight: 2
+- id: especialista-tecnico-curso
+  weight: 1
+- id: lider-tecnico-pesquisa
+  weight: 1
+lenses:
+- pedagogy
+- technical
+- kt
+- audience
+- accessibility
+overview_lenses:
+- pedagogy
+max_majors: 3
+calibration_hint: Calibre com o perfil real dos participantes e dúvidas de turmas anteriores.

@@ -1,0 +1,34 @@
+id: administrador-imovel
+name: Administração/síndico(a) do imóvel, genérico
+context: Precisa que o manual reflita exatamente o regimento e as particularidades do endereço.
+goals:
+- regras corretas e aplicáveis
+- reduzir conflitos e chamados
+priorities:
+  compliance: 0.45
+  consistency: 0.25
+  format: 0.15
+  audience: 0.15
+rubric:
+- id: R1
+  text: Fidelidade ao regimento/convenção
+  weight: 0.4
+- id: R2
+  text: Particularidades do imóvel corretas
+  weight: 0.3
+- id: R3
+  text: Procedimentos claros
+  weight: 0.3
+typical_questions:
+- Esta regra está no regimento?
+- Este horário vale para este endereço?
+red_flags:
+- regra inventada
+- dado do imóvel errado
+tone: formal
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

@@ -1,0 +1,20 @@
+id: reproducibility
+name: Reprodutibilidade
+question: Outra pessoa executa e chega ao mesmo resultado?
+applies_to:
+- notebook
+- document
+- script
+criteria:
+- id: RPR-1
+  text: Ambiente e dependências declarados com versões
+  severity_hint: major
+- id: RPR-2
+  text: Passos executáveis do início ao fim
+  severity_hint: blocker
+- id: RPR-3
+  text: Dados, sementes e configurações disponíveis ou descritos
+  severity_hint: major
+- id: RPR-4
+  text: Resultado esperado e como verificá-lo
+  severity_hint: major

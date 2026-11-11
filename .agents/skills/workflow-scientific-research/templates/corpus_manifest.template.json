@@ -1,0 +1,34 @@
+{
+  "research_id": "<snake_case, ex.: grafos_conhecimento>",
+  "discipline_id": "<pasta-mãe na memória, ex.: pub>",
+  "base_document": "<caminho relativo à raiz do workspace do documento cujas referências semeiam o corpus>",
+  "corpus_dir": "<caminho relativo à raiz do workspace onde ficam os PDFs, ex.: PUB/Material de apoio/papers>",
+  "updated_at": "<AAAA-MM-DD>",
+  "items": [
+    {
+      "id": "<sobrenome1ano, ex.: szekely2015>",
+      "role": "seed | snowball | search",
+      "cited_as": "<referência EXATAMENTE como aparece no documento-base (vazio se role != seed)>",
+      "title": "<título OFICIAL da obra>",
+      "authors": ["<Sobrenome1>", "<Sobrenome2>"],
+      "year": 0,
+      "venue": "<veículo oficial, volume, páginas>",
+      "doi": "<10.xxxx/... ou null>",
+      "file": "<NomeArquivo.pdf dentro de corpus_dir, ou null se ainda não obtido>",
+      "access": "open | institutional | public_document | unavailable",
+      "source_url": "<URL de onde o arquivo foi (ou deve ser) obtido>",
+      "notes": "<opcional>",
+      "acknowledged": "<OPCIONAL: justificativa que rebaixa um erro conhecido a aviso>",
+      "waived": "<OPCIONAL: justificativa para aceitar o arquivo ausente>"
+    }
+  ],
+  "citation_discrepancies": [
+    {
+      "item": "<id>",
+      "in_base_document": "<como foi citado>",
+      "official": "<metadados oficiais>",
+      "evidence": "<onde foi verificado: 1a página do PDF, OpenAlex, site da editora>"
+    }
+  ]
+}
+

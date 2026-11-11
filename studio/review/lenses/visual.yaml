@@ -1,0 +1,32 @@
+id: visual
+name: Design visual e legibilidade
+question: Dá para ler, entender e confiar só olhando?
+applies_to:
+- deck
+- document
+- web
+criteria:
+- id: VIS-1
+  text: Texto legível em escala proporcional ao canvas (mín. 18pt em canvas 15" ou 12pt em canvas 5.6") e contraste WCAG >= 3.0:1
+  severity_hint: blocker
+- id: VIS-2
+  text: Um foco por slide/página; hierarquia visual clara
+  severity_hint: minor
+- id: VIS-3
+  text: Gráficos gerados com ferramenta SOTA revisada (<= 60 dias), destaque na série certa, eixos e unidades a 300 DPI
+  severity_hint: major
+- id: VIS-4
+  text: Consistência de cores, fontes, entrelinhas (1.15 a 1.35) e alinhamentos
+  severity_hint: major
+- id: VIS-5
+  text: Imagens nítidas, sem distorção, com crédito quando aplicável
+  severity_hint: minor
+- id: VIS-6
+  text: Nada cortado, sobreposto, colidindo entre linhas ou estourando margens
+  severity_hint: blocker
+- id: VIS-7
+  text: Zero placeholders órfãos ou blocos cinzas vazios (todo slide visual possui diagrama ou card renderizado)
+  severity_hint: blocker
+- id: VIS-8
+  text: Equilíbrio espacial sem deserto lateral (metade direita vazia) e sem cemitério vertical em colunas (ocupação >= 35%)
+  severity_hint: blocker

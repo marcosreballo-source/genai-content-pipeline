@@ -1,0 +1,13 @@
+A busca em largura (BFS) visita os vértices em ordem de distância à origem.
+\begin{lstlisting}[language=Python]
+# busca em largura (BFS) — versão didática
+from collections import deque
+def bfs(G, s):
+    dist = {s: 0}; fila = deque([s])
+    while fila:
+        u = fila.popleft()
+        for v in G[u]:
+            if v not in dist:
+                dist[v] = dist[u] + 1; fila.append(v)
+    return dist
+\end{lstlisting}

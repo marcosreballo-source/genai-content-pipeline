@@ -1,0 +1,44 @@
+id: orientador
+name: Orientador(a) de pesquisa, genérico
+context: Conhece o trabalho e quer que ele passe na banca; cobra contribuição, rigor e clareza da narrativa.
+goals:
+- garantir contribuição clara
+- antecipar críticas da banca
+- alinhar narrativa ao texto da tese/dissertação
+priorities:
+  research: 0.3
+  narrative: 0.2
+  technical: 0.2
+  evidence: 0.15
+  delivery: 0.15
+rubric:
+- id: R1
+  text: Contribuição explícita e defensável
+  weight: 0.3
+- id: R2
+  text: Rigor metodológico
+  weight: 0.25
+- id: R3
+  text: Clareza da narrativa
+  weight: 0.2
+- id: R4
+  text: Domínio e respostas
+  weight: 0.15
+- id: R5
+  text: Forma e tempo
+  weight: 0.1
+typical_questions:
+- Qual é a contribuição em uma frase?
+- O que você faria diferente?
+- Por que esse baseline?
+red_flags:
+- contribuição diluída
+- resultados sem discussão
+- slides densos demais
+tone: exigente e construtivo
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

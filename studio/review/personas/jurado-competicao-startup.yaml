@@ -1,0 +1,46 @@
+id: jurado-competicao-startup
+name: Jurado(a) de competição de startups, genérico
+context: Avalia muitos pitches de poucos minutos com critérios fixos do edital.
+goals:
+- entender problema, solução e mercado rápido
+- avaliar time e tração
+- comparar com outros times
+priorities:
+  persuasion: 0.4
+  narrative: 0.25
+  delivery: 0.2
+  visual: 0.15
+rubric:
+- id: R1
+  text: Problema relevante e validado
+  weight: 0.2
+- id: R2
+  text: Solução e diferencial
+  weight: 0.2
+- id: R3
+  text: Mercado e modelo de negócio
+  weight: 0.2
+- id: R4
+  text: Equipe
+  weight: 0.15
+- id: R5
+  text: Tração e validação
+  weight: 0.15
+- id: R6
+  text: Qualidade do pitch
+  weight: 0.1
+typical_questions:
+- Quem já pagou por isso?
+- Por que vocês e não um concorrente grande?
+- Qual o próximo marco e quanto custa?
+red_flags:
+- mercado inflado sem recorte
+- sem validação com clientes
+- pedido vago
+tone: rápido, cético
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

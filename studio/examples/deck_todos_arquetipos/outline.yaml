@@ -1,0 +1,23 @@
+slides:
+- {id: SL-01, section: abertura, archetype: title, message: "Status da pesquisa"}
+- {id: SL-02, section: abertura, archetype: agenda, message: "Roteiro"}
+- {id: SL-03, section: resumo, archetype: kpis, message: "Os três indicadores do trimestre"}
+- {id: SL-04, section: resultados, archetype: chart, message: "Modelo supera o baseline em 9 p.p."}
+- {id: SL-05, section: resultados, archetype: image, message: "Convergência mais rápida"}
+- {id: SL-06, section: metodo, archetype: section, message: "Método"}
+- {id: SL-07, section: metodo, archetype: process, message: "Pipeline em quatro etapas"}
+- {id: SL-08, section: metodo, archetype: equation, message: "Score de anomalia"}
+- {id: SL-09, section: metodo, archetype: diagram, message: "Arquitetura"}
+- {id: SL-10, section: metodo, archetype: code, message: "Trecho do treino"}
+- {id: SL-11, section: riscos, archetype: two_column, message: "Riscos e mitigações"}
+- {id: SL-12, section: riscos, archetype: table, message: "Comparação de modelos"}
+- {id: SL-13, section: proximos, archetype: timeline, message: "Cronograma"}
+- {id: SL-14, section: proximos, archetype: comparison, message: "Opções de extensão"}
+- {id: SL-15, section: proximos, archetype: statement, message: "Pedido"}
+- {id: SL-16, section: proximos, archetype: big_number, message: "Custo"}
+- {id: SL-17, section: proximos, archetype: quote, message: "Cliente"}
+- {id: SL-18, section: proximos, archetype: team, message: "Time"}
+- {id: SL-19, section: fechamento, archetype: closing, message: "Decisão"}
+- {id: SL-20, section: fechamento, archetype: bullets, message: "Detalhes"}
+- {id: SL-21, section: fechamento, archetype: references, message: "Refs"}
+- {id: SL-22, section: fechamento, archetype: qa, message: "Perguntas"}

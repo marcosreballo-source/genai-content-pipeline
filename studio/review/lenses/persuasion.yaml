@@ -1,0 +1,27 @@
+id: persuasion
+name: Persuasão e decisão
+question: O público sai convencido e sabendo o que fazer?
+applies_to:
+- deck
+- document
+- web
+- script
+criteria:
+- id: PER-1
+  text: Problema real, dimensionado e com evidência de dor
+  severity_hint: blocker
+- id: PER-2
+  text: Solução e diferencial claros em uma frase
+  severity_hint: major
+- id: PER-3
+  text: Tração ou provas proporcionais ao estágio
+  severity_hint: major
+- id: PER-4
+  text: Modelo de negócio/viabilidade e números consistentes entre si
+  severity_hint: major
+- id: PER-5
+  text: Pedido explícito (ask ou decisão) com uso dos recursos
+  severity_hint: blocker
+- id: PER-6
+  text: Riscos e objeções antecipados
+  severity_hint: minor

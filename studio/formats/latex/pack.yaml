@@ -1,0 +1,16 @@
+id: latex-doc
+name: Documentos LaTeX a partir de templates (apostilas, livros, artigos, teses, relatórios, manuais)
+status: pronto
+outputs: [pdf, fonte .tex montada]
+job_files: [doc.yaml, plan.yaml, "content/sections/Sxx.pN.tex", "content/appendix/Axx.pN.tex", references.bib, assets/, build/, review/]
+templates: templates/latex/          # registrar com: mf_latex.py inspect <pasta> --id <id>  (ou --builtin studio-book)
+writing_rules: formats/latex/writing_rules.md
+commands:
+  new: python studio/scripts/mf_latex.py new <template_id> <job>
+  plan: python studio/scripts/mf_latex.py plan <job>
+  lint_unit: python studio/scripts/mf_latex.py lint <job> --unit <Sxx.pN>
+  build: python studio/scripts/mf_latex.py build <job>
+  bib: python studio/scripts/sl_sources.py bib --out <job>/references.bib
+unit_rule: "~900 palavras por parte de seção; máximo rígido 1200"
+review_default_lenses: [technical, evidence, format, consistency]
+requires: {programs: [pdflatex], optional: [latexmk, xelatex, biber]}

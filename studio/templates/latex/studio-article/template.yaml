@@ -1,0 +1,42 @@
+id: studio-article
+kind: document
+engine: pdflatex
+main: main.tex
+class: article
+packages:
+- amsmath
+- amssymb
+- babel
+- booktabs
+- caption
+- csquotes
+- fontenc
+- geometry
+- graphicx
+- hyperref
+- inputenc
+- listings
+- lmodern
+- microtype
+- textcomp
+- xcolor
+section_commands:
+- section
+- subsection
+- subsubsection
+metadata_map:
+  title: \title{%s}
+  author: \author{%s}
+  date: \date{%s}
+front_envs:
+- abstract
+appendix: false
+bibliography:
+  command: bibliography
+  file: references.bib
+limits:
+  pages_max: null
+source:
+  url: ''
+  license: ''
+  notes: ''

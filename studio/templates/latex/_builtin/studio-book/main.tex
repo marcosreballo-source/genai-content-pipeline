@@ -1,0 +1,39 @@
+\documentclass[11pt,a4paper,oneside]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\IfFileExists{lmodern.sty}{\usepackage{lmodern}\usepackage{microtype}}{}
+\IfFileExists{portuges.ldf}{\usepackage[brazil]{babel}}{}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{listings}
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage[most]{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+\definecolor{studioPrimary}{HTML}{1F3A5F}
+\definecolor{studioAccent}{HTML}{E4572E}
+\newtcolorbox{definicao}[1][]{colback=studioPrimary!5,colframe=studioPrimary,fonttitle=\bfseries,title=Definição #1}
+\newtcolorbox{exemplo}[1][]{colback=studioAccent!5,colframe=studioAccent,fonttitle=\bfseries,title=Exemplo #1}
+\newtcolorbox{atencao}{colback=yellow!8,colframe=orange!70!black,fonttitle=\bfseries,title=Atenção}
+\lstset{basicstyle=\ttfamily\small, breaklines=true, frame=single, backgroundcolor=\color{gray!8},
+  literate={á}{{\'a}}1 {à}{{\`a}}1 {â}{{\^a}}1 {ã}{{\~a}}1 {é}{{\'e}}1 {ê}{{\^e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ô}{{\^o}}1 {õ}{{\~o}}1 {ú}{{\'u}}1 {ü}{{\"u}}1 {ç}{{\c c}}1 {Á}{{\'A}}1 {À}{{\`A}}1 {Â}{{\^A}}1 {Ã}{{\~A}}1 {É}{{\'E}}1 {Ê}{{\^E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ô}{{\^O}}1 {Õ}{{\~O}}1 {Ú}{{\'U}}1 {Ç}{{\c C}}1 {—}{{---}}1 {–}{{--}}1 {º}{{\textordmasculine}}1 {ª}{{\textordfeminine}}1 {°}{{\textdegree}}1 {“}{{``}}1 {”}{{''}}1 {’}{{'}}1}
+\title{Título da apostila}
+\author{Autor}
+\date{\today}
+\begin{document}
+\maketitle
+\tableofcontents
+\chapter{Primeiro capítulo}
+Texto de exemplo \cite{exemplo2020}.
+\begin{definicao}
+Exemplo de definição.
+\end{definicao}
+\chapter{Segundo capítulo}
+Texto de exemplo.
+\bibliographystyle{plain}
+\bibliography{exemplo}
+\end{document}

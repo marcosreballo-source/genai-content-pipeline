@@ -1,0 +1,17 @@
+id: kt
+name: Transferência operacional
+question: O receptor consegue aplicar e manter sozinho?
+applies_to:
+- document
+- notebook
+- deck
+criteria:
+- id: KT-1
+  text: Passos, insumos e critério de sucesso permitem executar sem o autor
+  severity_hint: blocker
+- id: KT-2
+  text: Erros comuns, troubleshooting e escalonamento
+  severity_hint: major
+- id: KT-3
+  text: Como medir e como manter
+  severity_hint: major

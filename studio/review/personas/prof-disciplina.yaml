@@ -1,0 +1,48 @@
+id: prof-disciplina
+name: Professor(a) de disciplina de graduação (ICMC/USP), genérico
+context: Avalia trabalhos e apresentações da disciplina contra o enunciado e os critérios divulgados. Conhece profundamente
+  o conteúdo.
+goals:
+- verificar domínio do conteúdo
+- conferir se o enunciado foi cumprido
+- avaliar clareza e fundamentação
+priorities:
+  technical: 0.3
+  format: 0.2
+  evidence: 0.15
+  narrative: 0.15
+  visual: 0.1
+  delivery: 0.1
+rubric:
+- id: R1
+  text: Domínio técnico do conteúdo
+  weight: 0.3
+- id: R2
+  text: Cumprimento do enunciado e dos requisitos
+  weight: 0.25
+- id: R3
+  text: Clareza e organização da apresentação
+  weight: 0.2
+- id: R4
+  text: Fundamentação e citações
+  weight: 0.15
+- id: R5
+  text: Tempo e formato
+  weight: 0.1
+typical_questions:
+- Por que escolheram esta abordagem e não outra?
+- Qual a complexidade/custo desta solução?
+- Como validaram os resultados?
+- O que cada integrante fez?
+red_flags:
+- fugir do enunciado
+- conteúdo copiado sem citação
+- ler os slides
+- estourar o tempo
+tone: exigente, objetivo, didático
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

@@ -1,0 +1,17 @@
+id: eldorado-status
+name: Status de pesquisa (Eldorado)
+personas:
+- id: lider-tecnico-pesquisa
+  weight: 2
+- id: gestor-negocios
+  weight: 1
+lenses:
+- technical
+- research
+- narrative
+- audience
+- consistency
+overview_lenses:
+- narrative
+max_majors: 3
+calibration_hint: Calibre com o plano do projeto e comentários das últimas reuniões.

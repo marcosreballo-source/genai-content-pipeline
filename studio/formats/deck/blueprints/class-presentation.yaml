@@ -1,0 +1,128 @@
+id: class-presentation
+name: Apresentação de trabalho de disciplina (individual ou em grupo)
+contexts:
+- 'ICMC/USP: disciplinas de SI'
+duration_rule:
+  slides_per_min: 0.9
+  min: 6
+  max: 20
+panel_default: disciplina-icmc
+notes_required: true
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: disciplina, título, integrantes, professor(a), data
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: contexto
+  name: Contexto e problema
+  required: true
+  purpose: o que o enunciado pede e por que importa
+  suggested_archetypes:
+  - statement
+  - bullets
+  slides:
+  - 1
+  - 2
+- id: objetivos
+  name: Objetivos
+  required: true
+  purpose: o que foi feito, mensurável
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: fundamentacao
+  name: Fundamentação
+  required: false
+  purpose: conceitos necessários, com fonte
+  suggested_archetypes:
+  - bullets
+  - equation
+  - diagram
+  slides:
+  - 0
+  - 4
+- id: desenvolvimento
+  name: Desenvolvimento/método
+  required: true
+  purpose: como foi feito
+  suggested_archetypes:
+  - process
+  - diagram
+  - code
+  slides:
+  - 1
+  - 5
+- id: resultados
+  name: Resultados
+  required: true
+  purpose: o que se obteve, com evidência
+  suggested_archetypes:
+  - chart
+  - table
+  - image
+  slides:
+  - 1
+  - 4
+- id: discussao
+  name: Discussão
+  required: true
+  purpose: limitações, dificuldades, aprendizados
+  suggested_archetypes:
+  - two_column
+  - bullets
+  slides:
+  - 1
+  - 2
+- id: conclusao
+  name: Conclusão
+  required: true
+  purpose: resposta ao enunciado
+  suggested_archetypes:
+  - statement
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: divisao
+  name: Divisão do trabalho
+  required: false
+  purpose: quem fez o quê (grupos)
+  suggested_archetypes:
+  - table
+  - team
+  slides:
+  - 0
+  - 1
+- id: referencias
+  name: Referências
+  required: true
+  purpose: fontes no padrão pedido
+  suggested_archetypes:
+  - references
+  slides:
+  - 1
+  - 1
+- id: perguntas
+  name: Perguntas
+  required: false
+  purpose: ''
+  suggested_archetypes:
+  - qa
+  slides:
+  - 0
+  - 1
+principles:
+- Siga a ordem que o enunciado sugere
+- Cite fontes no próprio slide
+- Ensaiem com cronômetro; distribuam a fala
+pitfalls:
+- ler os slides
+- código ilegível no slide
+- esquecer referências

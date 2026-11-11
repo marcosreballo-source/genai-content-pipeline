@@ -1,0 +1,110 @@
+id: course-lecture
+name: Aula de curso (Knowledge Factory)
+contexts:
+- cursos KF
+- aulas que ministro
+duration_rule:
+  slides_per_min: 0.5
+  min: 8
+  max: 45
+panel_default: curso-kf
+notes_required: true
+sections:
+- id: abertura
+  name: Capa da aula
+  required: true
+  purpose: curso, módulo, aula
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: objetivos
+  name: Objetivos da aula
+  required: true
+  purpose: outcomes O-xx da EDS em linguagem do aluno
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: ativacao
+  name: Ativação
+  required: true
+  purpose: pergunta ou caso que liga ao conhecimento prévio
+  suggested_archetypes:
+  - statement
+  - quote
+  - image
+  slides:
+  - 1
+  - 1
+- id: conteudo
+  name: Conteúdo
+  required: true
+  purpose: nós K-xx do módulo, na ordem do grafo
+  suggested_archetypes:
+  - bullets
+  - diagram
+  - equation
+  - code
+  - image
+  - two_column
+  slides:
+  - 2
+  - 25
+- id: exemplo
+  name: Exemplo resolvido
+  required: true
+  purpose: aplicação passo a passo
+  suggested_archetypes:
+  - process
+  - code
+  - image
+  slides:
+  - 1
+  - 4
+- id: pratica
+  name: Prática
+  required: true
+  purpose: atividade ligada à competência C-xx
+  suggested_archetypes:
+  - process
+  - bullets
+  slides:
+  - 1
+  - 3
+- id: sintese
+  name: Síntese
+  required: true
+  purpose: o que levar
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: checagem
+  name: Checagem rápida
+  required: false
+  purpose: perguntas de verificação
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 0
+  - 1
+- id: proximos
+  name: Próxima aula
+  required: false
+  purpose: ''
+  suggested_archetypes:
+  - closing
+  slides:
+  - 0
+  - 1
+principles:
+- Cada slide de conteúdo cita SRC#Cxxxx
+- Nenhum conceito usado antes de seus pré-requisitos
+- 'Notas de fala completas: a aula pode ser dada por outra pessoa'
+pitfalls:
+- slides como apostila
+- objetivos sem atividade correspondente

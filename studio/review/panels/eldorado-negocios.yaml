@@ -1,0 +1,17 @@
+id: eldorado-negocios
+name: Resultados para negócios (Eldorado)
+personas:
+- id: gestor-negocios
+  weight: 2
+- id: cliente-corporativo
+  weight: 1
+lenses:
+- audience
+- persuasion
+- narrative
+- visual
+overview_lenses:
+- narrative
+- audience
+max_majors: 3
+calibration_hint: Calibre com o que a área de negócios pediu e decisões pendentes.

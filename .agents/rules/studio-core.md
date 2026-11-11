@@ -1,0 +1,26 @@
+---
+trigger: model_decision
+description: Regras do Studio (produção de materiais, biblioteca de fontes e revisão por personas). Aplicar ao executar comandos /mf-*, /sl-*, /rep-*, /studio-*, skills mf-*, sl-*, rep-* ou ao trabalhar em arquivos de studio/.
+---
+# Studio: Regras
+
+1. **Escopo.** Valem para comandos `/mf-*`, `/sl-*`, `/rep-*`, `/studio-*`, skills `mf-*`, `sl-*`, `rep-*` e arquivos em `studio/`. Não mudam o comportamento de outras skills do workspace.
+2. **Uma unidade por rodada.** Cada resposta produz no máximo 1200 palavras de conteúdo: uma unidade de slides, um fragmento LaTeX, uma ficha de fonte ou uma unidade de revisão. Depois valide e PARE ou siga para a próxima unidade numa nova rodada.
+3. **Spec primeiro, render por script.** Nunca escreva XML de PowerPoint nem monte .tex completo à mão. Preencha as specs (YAML ou fragmentos) e use `studio/scripts/*.py`. Os scripts são a fonte da verdade: não os reescreva; se um falhar, mostre o erro ao usuário.
+4. **Nada inventado.** Fatos, números, datas, nomes, citações e regras vêm das fontes (`sl_sources.py pack`), do brief, do perfil (ex.: perfil do imóvel) ou do usuário. Faltou? Escreva `[[PENDENTE: o que falta]]` e avise. O QA final bloqueia pendências.
+5. **Fundamentação antes de escrever.** Conteúdo técnico ou acadêmico: rode `sl_sources.py pack --concepts "..."` e cite `SRC-x#Cxxxx`. Sem fonte na biblioteca: gere pedido de bibliografia (`sl_sources.py coverage` ou registre em `pending.md`) em vez de escrever de memória.
+6. **Valide cada unidade** com o script do formato (`mf_deck.py validate --unit`, `mf_latex.py lint --unit`, `sl_sources.py validate --chunk`, `rep_review.py validate --unit`) e corrija até zerar os erros.
+7. **Prévia visual e Gate Geométrico obrigatórios** antes de entregar: além de `mf_deck.py preview` e `mf_deck.py qa`, todo deck deve passar por `.\.venv\Scripts\python.exe studio/tools/visual_qa_gates.py <job>` (Exit Code 0) e pela validação de canário óptico `--verify-audit`.
+8. **Entrega só após revisão.** O material final passa por `rep_review.py consolidate` sem blockers, ou o usuário aceita explicitamente os blockers restantes.
+9. **Templates originais são intocáveis.** Mudanças só no `scaffold/` gerado por `mf_latex.py inspect` ou no `template.yaml`.
+10. **Personas são simulações.** Use só os critérios documentados na persona e o feedback real registrado na calibração. Não atribua opiniões inventadas a pessoas reais.
+11. **Retomada.** Em dúvida sobre o que fazer, rode `python studio/scripts/studio_next.py <job>` e execute apenas o passo indicado.
+12. **Idioma.** Português do Brasil, salvo pedido explícito ou template em outra língua.
+13. **Zero Placeholder Órfão, Catálogo SOTA (60 dias) e Provisionamento Automático.** É TERMINANTEMENTE PROIBIDO compilar ou entregar apresentações contendo `Picture Placeholder` vazio, caixas sem imagem ou blocos cinzas opacos.
+    - Todo slide conceitual, de arquitetura, algoritmo, hardware, fluxo ou modelo matemático DEVE ter seu diagrama ou gráfico sintetizado programaticamente antes da renderização, em qualquer área do conhecimento.
+    - **Proibição de Fallback de Rebaixamento e Ciclo SOTA de 60 Dias:** Antes de utilizar qualquer biblioteca do catálogo (`D3`, `plotly.js`, `Vega`, `Vega-Lite`, `nivo`, `Victory`, `Chart.js`, `vis.js`, `Highcharts`, `Google Charts`, `Leaflet`, `ECharts`, `Mermaid`, `Bokeh`, `Dash`, `plotly.py`, `Altair`, `mpld3`, `Matplotlib`, `Seaborn`, `NetworkX`, `Pillow`, `ggplot2`, `Chaco`, `Graphviz`, `TikZ`), execute `.\.venv\Scripts\python.exe studio/tools/visual_sota_auditor.py check --library <lib>`. Se a última revisão de estado da arte da biblioteca tiver $\ge 60$ dias corridos, atualize o estudo SOTA antes de gerar o asset. Garanta a instalação do ambiente via `.\.venv\Scripts\python.exe studio/tools/visual_env_provisioner.py --ensure <lib>`.
+    - Em slides de perfil/bio sem foto real fornecida, gere autonomamente um card visual estilizado com avatar vetorial e badges.
+14. **Equilíbrio Espacial, Tipografia Determinística e Auditoria Anti-Teatro (`visual_qa_gates.py`).**
+    - **Proibição de Desertos Espaciais:** Slides de conteúdo não podem ter metade da tela preenchida e a outra metade em branco ($< 1.5\%$ de densidade de tinta na grade $4 \times 4$), nem colunas verticais com $> 60\%$ de vazio na base.
+    - **Portão Determinístico + Canário Óptico:** Sem alterar `studio/scripts/*.py`, execute `.\.venv\Scripts\python.exe studio/tools/visual_qa_gates.py <job>`. O script audita o `.pptx`, o `.pdf` (via PyMuPDF) e os `.png`s (via Pillow), gera `build/qa_challenge_sheet.png` com um código canário desenhado apenas nos pixels da imagem e bloqueia o build (`exit code != 0`) se houver colisão de linhas, fonte ilegível, contraste $< 2.8:1$, bloco cinza ou deserto espacial.
+    - **Inspeção Multimodal por Subagente e Verificação Criptográfica:** Emita no chat `[INICIANDO INSPEÇÃO VISUAL MULTIMODAL]`, invoque um subagente auditor (ou inspecione via `read_file` a `qa_challenge_sheet.png` e os slides), extraia o código canário visual dos pixels, preencha `build/visual_audit_report.md` e execute `.\.venv\Scripts\python.exe studio/tools/visual_qa_gates.py <job> --verify-audit --canary <CODIGO>`.

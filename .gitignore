@@ -1,0 +1,8 @@
+.env
+*.env
+.venv/
+__pycache__/
+**/build/
+_academicos_memory/
+jobs/
+_snapshots/

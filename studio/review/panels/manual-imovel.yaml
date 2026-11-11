@@ -1,0 +1,20 @@
+id: manual-imovel
+name: Manual de convivência de imóvel
+personas:
+- id: morador-novo
+  weight: 2
+- id: administrador-imovel
+  weight: 2
+- id: revisor-juridico-condominial
+  weight: 1
+lenses:
+- compliance
+- audience
+- accessibility
+- consistency
+- visual
+overview_lenses:
+- compliance
+- audience
+max_majors: 3
+calibration_hint: Calibre com o regimento interno/convenção e o perfil do imóvel (property profile).

@@ -1,0 +1,19 @@
+id: journal-preprint
+name: Submissão a journal/conferência (preprint)
+personas:
+- id: revisor-journal-metodologico
+  weight: 2
+- id: revisor-journal-editor
+  weight: 1
+lenses:
+- research
+- reproducibility
+- evidence
+- technical
+- format
+- audience
+overview_lenses:
+- research
+- format
+max_majors: 3
+calibration_hint: Calibre com as instruções aos autores, o formulário de revisão do venue e pareceres recebidos.

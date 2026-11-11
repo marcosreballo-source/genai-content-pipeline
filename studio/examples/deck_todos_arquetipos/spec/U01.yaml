@@ -1,0 +1,44 @@
+slides:
+- id: SL-01
+  archetype: title
+  title: "Detecção de anomalias em sensores industriais"
+  subtitle: "Status da pesquisa e pedido de extensão da validação em campo"
+  author: "Marcos Reballo"
+  event: "Reunião quinzenal de status"
+  date: "02/10/2026"
+  notes: "Abrir dizendo que há um pedido de decisão no final."
+- id: SL-02
+  archetype: agenda
+  items: ["Resumo do trimestre", "Resultados", "Método", "Riscos", "Próximos passos e pedido"]
+- id: SL-03
+  archetype: kpis
+  title: "O trimestre fechou acima da meta em dois dos três indicadores"
+  items:
+    - {value: "91%", label: "Acurácia na base de validação", delta: "+9 p.p. vs baseline"}
+    - {value: "38 ms", label: "Latência por inferência na borda", delta: "meta: 50 ms"}
+    - {value: "2/3", label: "Sensores-piloto instalados em campo", delta: "atraso de 3 semanas"}
+  sources: [SRC-relatorio-q3#C002]
+- id: SL-04
+  archetype: chart
+  title: "O modelo proposto supera o baseline em todas as classes de falha"
+  chart:
+    type: column
+    categories: ["Vibração", "Temperatura", "Pressão", "Corrente"]
+    series:
+      - {name: "Baseline", values: [0.78, 0.81, 0.74, 0.80]}
+      - {name: "Proposto", values: [0.90, 0.92, 0.88, 0.93]}
+    number_format: "0%"
+  takeaway: "Maior ganho em pressão (+14 p.p.), a classe mais cara para o cliente"
+  source: "Experimentos internos, base de validação v3 (n = 12.400 janelas)"
+- id: SL-05
+  archetype: image
+  title: "O modelo converge em metade das épocas do baseline"
+  image: curva.png
+  layout: right
+  bullets: ["Platô em ~10 épocas contra ~20 do baseline", "Menor custo de re-treino mensal", {text: "Sem sinal de overfitting", sub: ["gap treino/validação < 2 p.p."]}]
+  caption: "Curvas de validação, média de 5 seeds"
+- id: SL-06
+  archetype: section
+  number: "02"
+  title: "Método"
+  subtitle: "Como o pipeline foi construído e validado"

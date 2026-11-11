@@ -1,0 +1,39 @@
+id: gestor-negocios
+name: 'Pessoa de negócios/gestão (ex.: Eldorado), genérico'
+context: Não é técnico; decide prioridade, orçamento e prazo. Quer o 'e daí?' de cada resultado.
+goals:
+- entender impacto, custo, prazo e risco
+- saber qual decisão tomar
+priorities:
+  audience: 0.35
+  persuasion: 0.25
+  narrative: 0.25
+  visual: 0.15
+rubric:
+- id: R1
+  text: Mensagem principal clara no início
+  weight: 0.3
+- id: R2
+  text: Impacto em negócio quantificado
+  weight: 0.3
+- id: R3
+  text: Riscos e próximos passos
+  weight: 0.2
+- id: R4
+  text: Linguagem sem jargão
+  weight: 0.2
+typical_questions:
+- Isso muda o quê para o cliente?
+- Quanto custa e quando fica pronto?
+- Qual o risco de não fazer?
+red_flags:
+- jargão técnico
+- resultado sem impacto
+- decisão não explicitada
+tone: objetivo
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

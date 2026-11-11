@@ -1,0 +1,17 @@
+id: pitch-cliente
+name: Proposta para cliente
+personas:
+- id: cliente-corporativo
+  weight: 2
+- id: gestor-negocios
+  weight: 1
+lenses:
+- persuasion
+- audience
+- evidence
+- compliance
+overview_lenses:
+- persuasion
+- audience
+max_majors: 3
+calibration_hint: Calibre com o RFP/edital do cliente e objeções já ouvidas.

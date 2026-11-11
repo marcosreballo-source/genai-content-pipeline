@@ -1,0 +1,108 @@
+id: research-update
+name: Status de pesquisa (reunião de acompanhamento)
+contexts:
+- 'Eldorado: updates de status'
+- grupos de pesquisa
+duration_rule:
+  slides_per_min: 0.8
+  min: 6
+  max: 18
+panel_default: eldorado-status
+notes_required: false
+sections:
+- id: abertura
+  name: Capa
+  required: true
+  purpose: identificar projeto, período e se há decisão a tomar
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: resumo
+  name: Resumo executivo
+  required: true
+  purpose: onde estamos contra o plano, em 3 números ou 3 frases
+  suggested_archetypes:
+  - kpis
+  - bullets
+  - statement
+  slides:
+  - 1
+  - 2
+  must_include:
+  - status vs plano (no prazo/atrasado)
+- id: resultados
+  name: Resultados
+  required: true
+  purpose: o que mudou desde a última reunião, com evidência
+  suggested_archetypes:
+  - chart
+  - table
+  - image
+  - big_number
+  slides:
+  - 1
+  - 5
+  must_include:
+  - comparação com baseline ou meta
+- id: metodo
+  name: Método (só o necessário)
+  required: false
+  purpose: como chegamos aos resultados, no nível do público
+  suggested_archetypes:
+  - process
+  - diagram
+  - equation
+  - code
+  slides:
+  - 0
+  - 4
+- id: riscos
+  name: Riscos e bloqueios
+  required: true
+  purpose: o que pode atrasar e o que já está sendo feito
+  suggested_archetypes:
+  - two_column
+  - table
+  slides:
+  - 1
+  - 2
+- id: proximos
+  name: Próximos passos
+  required: true
+  purpose: marcos até a próxima reunião
+  suggested_archetypes:
+  - timeline
+  - bullets
+  slides:
+  - 1
+  - 2
+- id: pedido
+  name: Decisões ou apoio necessários
+  required: false
+  purpose: o que precisamos de quem está na sala
+  suggested_archetypes:
+  - statement
+  - closing
+  slides:
+  - 0
+  - 1
+- id: fechamento
+  name: Perguntas
+  required: false
+  purpose: abrir discussão
+  suggested_archetypes:
+  - qa
+  slides:
+  - 0
+  - 1
+principles:
+- Comece pelo que mudou desde a última reunião
+- Status sempre contra o plano
+- Cada resultado responde 'e daí?' para o projeto
+- Atrasos aparecem no resumo, não escondidos no fim
+pitfalls:
+- narrar atividades em vez de resultados
+- gráfico sem baseline
+- método detalhado demais para gestores

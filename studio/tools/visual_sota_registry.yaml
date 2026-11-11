@@ -1,0 +1,189 @@
+ttl_days: 60
+categories:
+  scientific_static_plot: Matplotlib
+  statistical_distribution: Seaborn
+  network_graph_topology: NetworkX
+  card_composite_vector: Pillow
+  interactive_scientific: plotly.py
+  declarative_statistical_py: Altair
+  web_custom_dom_svg: D3
+  web_declarative_grammar: Vega-Lite
+  web_enterprise_dashboard: ECharts
+  web_geospatial_map: Leaflet
+  web_dynamic_network_3d: vis.js
+  software_architecture_flow: Mermaid
+  directed_automata_dag: Graphviz
+  mathematical_vector_tex: TikZ
+  r_grammar_of_graphics: ggplot2
+libraries:
+  D3:
+    ecosystem: js
+    pkg: d3
+    last_sota_review_date: '2026-11-04'
+    sota_version: 7.9.0
+    recommended_for: Visualizações customizadas de dados vinculadas ao DOM/SVG e transformações
+      geométricas
+  plotly.js:
+    ecosystem: js
+    pkg: plotly.js-dist-min
+    last_sota_review_date: '2026-11-04'
+    sota_version: 2.35.2
+    recommended_for: Gráficos científicos interativos e dashboards analíticos web
+  Vega:
+    ecosystem: js
+    pkg: vega
+    last_sota_review_date: '2026-11-04'
+    sota_version: 5.30.0
+    recommended_for: Gramática declarativa JSON completa para visualizações estáticas
+      e interativas
+  Vega-Lite:
+    ecosystem: js
+    pkg: vega-lite
+    last_sota_review_date: '2026-11-04'
+    sota_version: 5.21.0
+    recommended_for: Gráficos declarativos concisos de alta velocidade e fidelidade
+      estatística
+  nivo:
+    ecosystem: js
+    pkg: '@nivo/core'
+    last_sota_review_date: '2026-11-04'
+    sota_version: 0.88.0
+    recommended_for: Componentes de gráficos altamente customizáveis em aplicações
+      React + D3
+  Victory:
+    ecosystem: js
+    pkg: victory
+    last_sota_review_date: '2026-11-04'
+    sota_version: 37.3.2
+    recommended_for: Visualizações responsivas e mobile-friendly baseadas em componentes
+      React
+  Chart.js:
+    ecosystem: js
+    pkg: chart.js
+    last_sota_review_date: '2026-11-04'
+    sota_version: 4.4.6
+    recommended_for: Prototipagem rápida e gráficos Canvas limpos para projetos leves
+  vis.js:
+    ecosystem: js
+    pkg: vis-network
+    last_sota_review_date: '2026-11-04'
+    sota_version: 9.1.9
+    recommended_for: Grafos de rede dinâmicos, timelines e conjuntos de dados complexos
+      em larga escala
+  Highcharts:
+    ecosystem: js
+    pkg: highcharts
+    last_sota_review_date: '2026-11-04'
+    sota_version: 11.4.8
+    recommended_for: Dashboards executivos polidos de padrão corporativo
+  Google Charts:
+    ecosystem: js
+    pkg: google-charts
+    last_sota_review_date: '2026-11-04'
+    sota_version: current
+    recommended_for: Visualizações web rápidas integradas ao ecossistema Google
+  Leaflet:
+    ecosystem: js
+    pkg: leaflet
+    last_sota_review_date: '2026-11-04'
+    sota_version: 1.9.4
+    recommended_for: Mapas interativos e visualização de dados geoespaciais
+  ECharts:
+    ecosystem: js
+    pkg: echarts
+    last_sota_review_date: '2026-11-04'
+    sota_version: 5.5.1
+    recommended_for: Visualizações interativas de grandes volumes de dados e matrizes
+      multidimensionais
+  Mermaid:
+    ecosystem: js
+    pkg: '@mermaid-js/mermaid-cli'
+    last_sota_review_date: '2026-11-04'
+    sota_version: 11.4.0
+    recommended_for: Fluxogramas, diagramas de sequência, estados e arquitetura
+  Bokeh:
+    ecosystem: python
+    pkg: bokeh
+    last_sota_review_date: '2026-11-04'
+    sota_version: 3.6.1
+    recommended_for: Visualizações interativas para navegadores web a partir do Python
+  Dash:
+    ecosystem: python
+    pkg: dash
+    last_sota_review_date: '2026-11-04'
+    sota_version: 2.18.2
+    recommended_for: Aplicações analíticas e dashboards web em Python (Flask + Plotly
+      + React)
+  plotly.py:
+    ecosystem: python
+    pkg: plotly
+    last_sota_review_date: '2026-11-04'
+    sota_version: 5.24.1
+    recommended_for: Visualizações científicas interativas e exportação estática via
+      Kaleido
+  Altair:
+    ecosystem: python
+    pkg: altair
+    last_sota_review_date: '2026-11-04'
+    sota_version: 5.4.1
+    recommended_for: Visualização estatística declarativa em Python baseada em Vega-Lite
+  mpld3:
+    ecosystem: python
+    pkg: mpld3
+    last_sota_review_date: '2026-11-04'
+    sota_version: 0.5.10
+    recommended_for: Ponte de figuras Matplotlib para interatividade D3 no navegador
+  Matplotlib:
+    ecosystem: python
+    pkg: matplotlib
+    last_sota_review_date: '2026-11-04'
+    sota_version: 3.9.2
+    recommended_for: Gráficos científicos estáticos de qualidade de publicação (300+
+      DPI) e geometria 3D
+  Seaborn:
+    ecosystem: python
+    pkg: seaborn
+    last_sota_review_date: '2026-11-04'
+    sota_version: 0.13.2
+    recommended_for: Visualização estatística de alto nível e paletas perceptualmente
+      uniformes
+  NetworkX:
+    ecosystem: python
+    pkg: networkx
+    last_sota_review_date: '2026-11-04'
+    sota_version: 3.4.2
+    recommended_for: Modelagem e plotagem de grafos, redes logísticas e topologias
+      de qubits
+  Pillow:
+    ecosystem: python
+    pkg: pillow
+    last_sota_review_date: '2026-11-04'
+    sota_version: 11.0.0
+    recommended_for: Síntese de cards tipográficos, badges, avatares e composição
+      de imagens
+  Chaco:
+    ecosystem: python
+    pkg: chaco
+    last_sota_review_date: '2026-11-04'
+    sota_version: 5.1.1
+    recommended_for: Plotagem científica interativa com zoom/pan em aplicações Python
+  ggplot2:
+    ecosystem: r
+    pkg: ggplot2
+    last_sota_review_date: '2026-11-04'
+    sota_version: 3.5.1
+    recommended_for: Análise exploratória de dados e gráficos estáticos em R sob a
+      Grammar of Graphics
+  Graphviz:
+    ecosystem: system
+    pkg: graphviz
+    last_sota_review_date: '2026-11-04'
+    sota_version: 12.2.0
+    recommended_for: Grafos direcionados hierárquicos (DAGs), máquinas de estado e
+      árvores sintáticas
+  TikZ:
+    ecosystem: tex
+    pkg: pgf
+    last_sota_review_date: '2026-11-04'
+    sota_version: 3.1.10
+    recommended_for: Diagramas vetoriais matemáticos puros e esquemas formais em LaTeX

@@ -1,0 +1,106 @@
+id: client-pitch
+name: Proposta para cliente
+contexts:
+- abertura de empresa
+- venda B2B
+duration_rule:
+  slides_per_min: 0.7
+  min: 7
+  max: 14
+panel_default: pitch-cliente
+notes_required: false
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: cliente, tema e data
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: contexto
+  name: Contexto do cliente
+  required: true
+  purpose: o problema DELE, nas palavras dele
+  suggested_archetypes:
+  - statement
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: dor
+  name: Custo do problema
+  required: true
+  purpose: quanto custa não resolver
+  suggested_archetypes:
+  - big_number
+  - kpis
+  slides:
+  - 1
+  - 1
+- id: proposta
+  name: Proposta
+  required: true
+  purpose: o que entregamos e como
+  suggested_archetypes:
+  - process
+  - two_column
+  slides:
+  - 1
+  - 2
+- id: prova
+  name: Provas
+  required: true
+  purpose: casos, depoimentos, resultados
+  suggested_archetypes:
+  - quote
+  - kpis
+  - image
+  slides:
+  - 1
+  - 2
+- id: diferenciais
+  name: Diferenciais
+  required: false
+  purpose: por que nós
+  suggested_archetypes:
+  - comparison
+  slides:
+  - 0
+  - 1
+- id: implantacao
+  name: Implantação
+  required: true
+  purpose: etapas, prazos e responsabilidades
+  suggested_archetypes:
+  - timeline
+  - table
+  slides:
+  - 1
+  - 1
+- id: investimento
+  name: Investimento e retorno
+  required: true
+  purpose: preço e ROI
+  suggested_archetypes:
+  - table
+  - kpis
+  slides:
+  - 1
+  - 1
+- id: proximos
+  name: Próximos passos
+  required: true
+  purpose: o que acontece depois desta reunião
+  suggested_archetypes:
+  - closing
+  slides:
+  - 1
+  - 1
+principles:
+- Fale do cliente antes de falar de você
+- ROI com premissas do próprio cliente
+pitfalls:
+- apresentação institucional longa
+- preço sem retorno

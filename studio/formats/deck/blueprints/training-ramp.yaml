@@ -1,0 +1,117 @@
+id: training-ramp
+name: Curso de rampagem / oficina de pesquisa
+contexts:
+- 'Eldorado: rampagem de oficinas'
+duration_rule:
+  slides_per_min: 0.5
+  min: 8
+  max: 40
+panel_default: eldorado-rampagem
+notes_required: true
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: tema, instrutor, duração
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: objetivos
+  name: O que vocês vão conseguir fazer
+  required: true
+  purpose: objetivos observáveis
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: agenda
+  name: Agenda
+  required: true
+  purpose: blocos e pausas
+  suggested_archetypes:
+  - agenda
+  slides:
+  - 1
+  - 1
+- id: conceitos
+  name: Conceitos
+  required: true
+  purpose: um conceito por vez, com exemplo
+  suggested_archetypes:
+  - bullets
+  - diagram
+  - equation
+  - two_column
+  slides:
+  - 2
+  - 15
+- id: demo
+  name: Demonstração
+  required: true
+  purpose: fazer junto
+  suggested_archetypes:
+  - code
+  - process
+  - image
+  slides:
+  - 1
+  - 6
+- id: pratica
+  name: Prática
+  required: true
+  purpose: exercício com critério de sucesso
+  suggested_archetypes:
+  - process
+  - bullets
+  slides:
+  - 1
+  - 4
+- id: armadilhas
+  name: Erros comuns
+  required: true
+  purpose: o que costuma dar errado e como resolver
+  suggested_archetypes:
+  - two_column
+  - table
+  slides:
+  - 1
+  - 2
+- id: recursos
+  name: Para continuar
+  required: true
+  purpose: documentação e materiais
+  suggested_archetypes:
+  - references
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: recap
+  name: Resumo
+  required: true
+  purpose: o essencial em 3 a 5 pontos
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: perguntas
+  name: Perguntas
+  required: false
+  purpose: ''
+  suggested_archetypes:
+  - qa
+  slides:
+  - 0
+  - 1
+principles:
+- Teoria mínima, prática máxima
+- Cada conceito tem exemplo e checagem rápida
+- Pré-requisitos declarados no início
+pitfalls:
+- usar termo antes de explicar
+- demo longa sem prática
+- exercício sem resposta esperada

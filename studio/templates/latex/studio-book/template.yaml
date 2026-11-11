@@ -1,0 +1,43 @@
+id: studio-book
+kind: document
+engine: pdflatex
+main: main.tex
+class: report
+packages:
+- amsmath
+- amssymb
+- babel
+- booktabs
+- caption
+- csquotes
+- fontenc
+- geometry
+- graphicx
+- hyperref
+- inputenc
+- listings
+- lmodern
+- microtype
+- tcolorbox
+- textcomp
+- xcolor
+section_commands:
+- chapter
+- section
+- subsection
+- subsubsection
+metadata_map:
+  title: \title{%s}
+  author: \author{%s}
+  date: \date{%s}
+front_envs: []
+appendix: false
+bibliography:
+  command: bibliography
+  file: references.bib
+limits:
+  pages_max: null
+source:
+  url: ''
+  license: ''
+  notes: ''

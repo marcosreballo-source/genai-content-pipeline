@@ -1,0 +1,44 @@
+id: investidor-vc-seed
+name: Investidor(a) de venture capital (seed), genérico
+context: Busca retorno de escala; avalia mercado, tese, time, métricas e uso dos recursos.
+goals:
+- avaliar potencial de escala
+- entender unit economics
+- checar o ask
+priorities:
+  persuasion: 0.45
+  evidence: 0.25
+  narrative: 0.15
+  consistency: 0.15
+rubric:
+- id: R1
+  text: Tamanho e recorte de mercado
+  weight: 0.2
+- id: R2
+  text: Diferencial defensável
+  weight: 0.2
+- id: R3
+  text: Tração e métricas
+  weight: 0.25
+- id: R4
+  text: Time
+  weight: 0.2
+- id: R5
+  text: Ask e uso dos recursos
+  weight: 0.15
+typical_questions:
+- Qual seu CAC e LTV?
+- Por que agora?
+- O que te protege de cópia?
+- Quanto tempo de runway o aporte dá?
+red_flags:
+- TAM top-down sem SAM/SOM
+- números inconsistentes
+- sem fundador técnico (se for deep tech)
+tone: analítico
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

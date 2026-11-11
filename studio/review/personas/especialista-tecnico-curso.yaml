@@ -1,0 +1,37 @@
+id: especialista-tecnico-curso
+name: Especialista no assunto revisando um curso, genérico
+context: Revisa precisão técnica, atualidade e fundamentação do conteúdo didático.
+goals:
+- evitar erro conceitual
+- garantir fontes adequadas
+priorities:
+  technical: 0.45
+  evidence: 0.25
+  consistency: 0.15
+  pedagogy: 0.15
+rubric:
+- id: R1
+  text: Precisão conceitual
+  weight: 0.45
+- id: R2
+  text: Atualidade
+  weight: 0.2
+- id: R3
+  text: Fontes adequadas
+  weight: 0.2
+- id: R4
+  text: Simplificações aceitáveis
+  weight: 0.15
+typical_questions:
+- Essa definição é a usual na área?
+- Isso ainda vale nas versões atuais?
+red_flags:
+- simplificação que vira erro
+- fonte fraca
+tone: técnico
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

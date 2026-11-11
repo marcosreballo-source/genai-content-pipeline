@@ -1,0 +1,34 @@
+# Kit visual padrão do Studio. Para criar um kit de marca, copie este arquivo (ex.: eldorado.yaml),
+# troque cores/fontes/logo e rode: python studio/scripts/mf_deck.py kit-check <id>
+id: default
+name: Studio Default (azul profundo + coral)
+colors:            # hexadecimal sem '#'
+  primary: "1F3A5F"       # títulos, elementos principais
+  accent: "E4572E"        # destaques (1 por slide), marcadores
+  accent2: "1B998B"       # destaque secundário (deltas, alternância)
+  text: "1F2933"          # texto corrido
+  muted: "5B6675"         # legendas, fontes, rodapé
+  light: "EEF1F5"         # cartões, faixas, linhas zebradas
+  background: "FFFFFF"
+  dark: "0F1B2D"          # fundo de capa/seções/encerramento
+  on_dark: "FFFFFF"       # texto sobre fundo escuro
+  on_dark_muted: "C3CDDA"
+  code_bg: "1E2430"
+  code_fg: "E6EDF3"
+chart_palette: ["1F3A5F", "E4572E", "1B998B", "F2A541", "8E6C8A", "5B6675"]
+fonts:             # use fontes instaladas na máquina de quem vai apresentar
+  heading: "Calibri"
+  body: "Calibri"
+  mono: "Consolas"
+sizes:             # em pontos; o build reduz até o mínimo quando o texto não cabe
+  title: 30
+  min_title: 20
+  body: 20
+  min_body: 14
+  footer: 10
+logo: null         # ex.: assets/logo.png (relativo a studio/kits/) — usado na capa
+logo_on_dark: null # versão clara do logo para fundos escuros
+footer:
+  text: ""         # vazio = título do brief
+  slide_numbers: true
+  logo: false

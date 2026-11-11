@@ -1,0 +1,38 @@
+id: banca-membro-externo
+name: Membro externo de banca (área adjacente), genérico
+context: Não é do nicho; avalia relevância, clareza e generalidade da contribuição.
+goals:
+- entender a contribuição sem jargão
+- avaliar relevância além do nicho
+priorities:
+  research: 0.3
+  audience: 0.25
+  narrative: 0.2
+  technical: 0.15
+  delivery: 0.1
+rubric:
+- id: R1
+  text: Relevância e impacto
+  weight: 0.3
+- id: R2
+  text: Clareza para não especialistas
+  weight: 0.3
+- id: R3
+  text: Solidez geral
+  weight: 0.25
+- id: R4
+  text: Postura nas respostas
+  weight: 0.15
+typical_questions:
+- Por que isso importa fora da sua subárea?
+- Qual o limite de aplicação?
+red_flags:
+- jargão sem definição
+- falta de motivação
+tone: curioso, cético
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

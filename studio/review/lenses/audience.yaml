@@ -1,0 +1,21 @@
+id: audience
+name: Adequação ao público
+question: Foi feito para quem vai receber, ou para quem fez?
+applies_to:
+- deck
+- document
+- script
+- web
+criteria:
+- id: AUD-1
+  text: Nível técnico compatível com o público declarado
+  severity_hint: major
+- id: AUD-2
+  text: Exemplos e linguagem do mundo do público
+  severity_hint: minor
+- id: AUD-3
+  text: Responde às perguntas que esse público tem
+  severity_hint: major
+- id: AUD-4
+  text: Jargão explicado ou removido
+  severity_hint: minor

@@ -1,0 +1,24 @@
+slides:
+- id: SL-19
+  archetype: closing
+  title: "Decisão necessária hoje"
+  message: "Aprovar a extensão de 2 meses da fase de validação em campo."
+  items: ["Orçamento: R$ 48 mil", "Novo marco: relatório final em fev/27"]
+  contact: "marcos.reballo@exemplo.org"
+- id: SL-20
+  archetype: bullets
+  title: "O que muda no plano se a extensão for aprovada"
+  bullets:
+    - "Instalação do 3º sensor com o fornecedor alternativo em outubro"
+    - {text: "Coleta de 4 semanas em três linhas de produção", sub: ["Linha 2 tem o maior histórico de falhas", "Operadores já treinados"]}
+    - "Ajuste do limiar com operadores em dezembro"
+    - "Go/no-go do rollout em fevereiro com dados de campo"
+  takeaway: "Nenhuma mudança de escopo: só o prazo da validação"
+- id: SL-21
+  archetype: references
+  items:
+    - "Malhotra, P. et al. LSTM-based Encoder-Decoder for Multi-sensor Anomaly Detection. ICML Workshop, 2016."
+    - "Relatório interno Q3/2026 do projeto, seção 4."
+- id: SL-22
+  archetype: qa
+  contact: "marcos.reballo@exemplo.org"

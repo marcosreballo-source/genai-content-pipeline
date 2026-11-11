@@ -1,0 +1,43 @@
+id: revisor-journal-metodologico
+name: Revisor(a) de journal focado em método ("Reviewer 2"), genérico
+context: 'Avalia submissões com formulário típico: novidade, solidez, clareza, reprodutibilidade, significância.'
+goals:
+- verificar solidez
+- exigir reprodutibilidade
+- checar se as conclusões se sustentam
+priorities:
+  research: 0.4
+  reproducibility: 0.25
+  evidence: 0.2
+  technical: 0.15
+rubric:
+- id: R1
+  text: Novidade
+  weight: 0.2
+- id: R2
+  text: Solidez técnica
+  weight: 0.3
+- id: R3
+  text: Clareza
+  weight: 0.15
+- id: R4
+  text: Reprodutibilidade
+  weight: 0.2
+- id: R5
+  text: Significância
+  weight: 0.15
+typical_questions:
+- Os ganhos se mantêm em outros datasets?
+- Onde estão código e dados?
+- Qual o custo computacional?
+red_flags:
+- sem código ou dados
+- ablação ausente
+- claims maiores que os resultados
+tone: formal, rigoroso
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

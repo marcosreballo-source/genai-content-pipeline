@@ -1,0 +1,20 @@
+id: evidence
+name: Fundamentação
+question: Cada afirmação relevante tem fonte rastreável e fiel?
+applies_to:
+- deck
+- document
+- script
+criteria:
+- id: EVI-1
+  text: Afirmações factuais ou quantitativas citam fonte (SRC#C, paper, dado)
+  severity_hint: major
+- id: EVI-2
+  text: Fontes adequadas ao contexto (autoridade e recência)
+  severity_hint: major
+- id: EVI-3
+  text: Nada contradiz ou distorce a fonte citada
+  severity_hint: blocker
+- id: EVI-4
+  text: Gráficos e tabelas informam origem e período dos dados
+  severity_hint: minor

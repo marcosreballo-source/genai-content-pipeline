@@ -1,0 +1,140 @@
+id: investor-pitch
+name: Pitch para investidores (captação)
+contexts:
+- anjos
+- VC seed
+- aceleradoras
+duration_rule:
+  slides_per_min: 1.0
+  min: 10
+  max: 16
+panel_default: pitch-investidor
+notes_required: true
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: empresa e frase-resumo
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: problema
+  name: Problema
+  required: true
+  purpose: dor, quem tem e custo
+  suggested_archetypes:
+  - statement
+  - big_number
+  slides:
+  - 1
+  - 1
+- id: solucao
+  name: Solução
+  required: true
+  purpose: o que é e por que é melhor
+  suggested_archetypes:
+  - image
+  - process
+  - statement
+  slides:
+  - 1
+  - 2
+- id: por_que_agora
+  name: Por que agora
+  required: true
+  purpose: mudança que abre a janela
+  suggested_archetypes:
+  - bullets
+  - timeline
+  slides:
+  - 1
+  - 1
+- id: mercado
+  name: Mercado
+  required: true
+  purpose: TAM/SAM/SOM bottom-up
+  suggested_archetypes:
+  - kpis
+  - chart
+  slides:
+  - 1
+  - 1
+- id: tracao
+  name: Tração
+  required: true
+  purpose: métricas e crescimento
+  suggested_archetypes:
+  - chart
+  - kpis
+  slides:
+  - 1
+  - 2
+- id: modelo
+  name: Modelo de negócio e unit economics
+  required: true
+  purpose: preço, CAC, LTV, margem
+  suggested_archetypes:
+  - table
+  - kpis
+  slides:
+  - 1
+  - 1
+- id: concorrencia
+  name: Concorrência e defensibilidade
+  required: true
+  purpose: posicionamento e moat
+  suggested_archetypes:
+  - comparison
+  - table
+  slides:
+  - 1
+  - 1
+- id: gtm
+  name: Go-to-market
+  required: true
+  purpose: como chegam aos clientes
+  suggested_archetypes:
+  - process
+  - timeline
+  slides:
+  - 1
+  - 1
+- id: equipe
+  name: Equipe
+  required: true
+  purpose: experiência relevante
+  suggested_archetypes:
+  - team
+  slides:
+  - 1
+  - 1
+- id: financeiro
+  name: Projeção financeira
+  required: false
+  purpose: 3 a 5 anos com premissas
+  suggested_archetypes:
+  - chart
+  - table
+  slides:
+  - 0
+  - 1
+- id: ask
+  name: Ask e uso dos recursos
+  required: true
+  purpose: valor, uso e marcos atingidos com ele
+  suggested_archetypes:
+  - closing
+  - chart
+  slides:
+  - 1
+  - 1
+principles:
+- Números consistentes do primeiro ao último slide
+- Premissas explícitas
+- Marcos claros para o próximo round
+pitfalls:
+- projeção em hockey stick sem premissas
+- ignorar concorrentes
+- ask sem uso dos recursos

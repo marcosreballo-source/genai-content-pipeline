@@ -1,0 +1,24 @@
+id: technical
+name: Correção técnica
+question: O conteúdo está correto, preciso e atual?
+applies_to:
+- deck
+- document
+- script
+- notebook
+criteria:
+- id: TEC-1
+  text: Afirmações técnicas corretas; simplificações didáticas não viram erro
+  severity_hint: blocker
+- id: TEC-2
+  text: Termos, notação e unidades consistentes e definidos no primeiro uso
+  severity_hint: major
+- id: TEC-3
+  text: Números, fórmulas e código conferem com a fonte ou com os dados
+  severity_hint: blocker
+- id: TEC-4
+  text: Ferramentas, versões e estado da arte atuais (sinalize o que pode estar desatualizado)
+  severity_hint: major
+- id: TEC-5
+  text: Premissas e limitações declaradas onde mudam a conclusão
+  severity_hint: major

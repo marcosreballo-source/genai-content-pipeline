@@ -1,0 +1,92 @@
+id: business-results
+name: Resultados de pesquisa para pessoal de negócios
+contexts:
+- 'Eldorado: apresentação para negócios'
+- clientes internos
+duration_rule:
+  slides_per_min: 0.6
+  min: 5
+  max: 12
+panel_default: eldorado-negocios
+notes_required: false
+sections:
+- id: abertura
+  name: Capa
+  required: true
+  purpose: tema e decisão em pauta
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: mensagem
+  name: A conclusão em uma frase
+  required: true
+  purpose: 'pirâmide de Minto: resposta primeiro'
+  suggested_archetypes:
+  - statement
+  - big_number
+  slides:
+  - 1
+  - 1
+- id: impacto
+  name: Impacto para o negócio
+  required: true
+  purpose: tempo, dinheiro, risco ou cliente
+  suggested_archetypes:
+  - kpis
+  - big_number
+  - chart
+  slides:
+  - 1
+  - 2
+- id: evidencia
+  name: Evidência
+  required: true
+  purpose: por que acreditar no resultado
+  suggested_archetypes:
+  - chart
+  - table
+  - comparison
+  - quote
+  slides:
+  - 1
+  - 3
+- id: como
+  name: Como funciona (alto nível)
+  required: false
+  purpose: sem jargão
+  suggested_archetypes:
+  - process
+  - two_column
+  - diagram
+  slides:
+  - 0
+  - 2
+- id: riscos
+  name: Riscos e limites
+  required: true
+  purpose: o que ainda não sabemos
+  suggested_archetypes:
+  - two_column
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: decisao
+  name: Decisão e próximos passos
+  required: true
+  purpose: o que pedimos e quando
+  suggested_archetypes:
+  - closing
+  slides:
+  - 1
+  - 1
+principles:
+- Conclusão primeiro, detalhes depois
+- Traduza métricas técnicas em impacto (R$, horas, risco)
+- No máximo um número de destaque por slide
+pitfalls:
+- jargão técnico
+- mostrar todos os experimentos
+- terminar sem pedir decisão

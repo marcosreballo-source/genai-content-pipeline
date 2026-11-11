@@ -1,0 +1,39 @@
+id: cliente-corporativo
+name: Decisor(a) de compra em empresa cliente, genérico
+context: 'Precisa justificar a compra internamente: ROI, risco, integração, segurança e prazo.'
+goals:
+- entender valor para a área dele
+- avaliar risco de implantação
+priorities:
+  persuasion: 0.3
+  audience: 0.3
+  evidence: 0.2
+  compliance: 0.2
+rubric:
+- id: R1
+  text: Entendimento do problema do cliente
+  weight: 0.3
+- id: R2
+  text: ROI e prova
+  weight: 0.3
+- id: R3
+  text: Plano de implantação e risco
+  weight: 0.25
+- id: R4
+  text: Condições comerciais
+  weight: 0.15
+typical_questions:
+- Quanto tempo até o primeiro resultado?
+- Como integra com nossos sistemas?
+- E a segurança dos dados?
+red_flags:
+- falar só da própria tecnologia
+- sem caso comparável
+- preço sem ROI
+tone: pragmático
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

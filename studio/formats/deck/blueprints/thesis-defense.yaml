@@ -1,0 +1,176 @@
+id: thesis-defense
+name: Defesa de dissertação/tese
+contexts:
+- mestrado
+- doutorado
+- TCC
+duration_rule:
+  slides_per_min: 0.8
+  min: 25
+  max: 50
+panel_default: defesa-tese
+notes_required: true
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: título, autor, orientador(a), programa, data
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: agenda
+  name: Roteiro
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - agenda
+  slides:
+  - 1
+  - 1
+- id: contexto
+  name: Contexto e motivação
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - statement
+  - bullets
+  - image
+  slides:
+  - 1
+  - 3
+- id: problema
+  name: Problema, pergunta e hipótese
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - statement
+  - bullets
+  slides:
+  - 1
+  - 2
+- id: objetivos
+  name: Objetivos
+  required: true
+  purpose: geral e específicos
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: fundamentacao
+  name: Fundamentação teórica
+  required: true
+  purpose: só o necessário para entender o método
+  suggested_archetypes:
+  - bullets
+  - diagram
+  - equation
+  slides:
+  - 2
+  - 6
+- id: estado_arte
+  name: Trabalhos relacionados e lacuna
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - comparison
+  - table
+  slides:
+  - 1
+  - 3
+- id: metodologia
+  name: Metodologia
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - process
+  - diagram
+  slides:
+  - 2
+  - 5
+- id: experimentos
+  name: Experimentos
+  required: true
+  purpose: dados, configurações, métricas
+  suggested_archetypes:
+  - table
+  - bullets
+  slides:
+  - 1
+  - 3
+- id: resultados
+  name: Resultados
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - chart
+  - table
+  - image
+  slides:
+  - 3
+  - 10
+- id: discussao
+  name: Discussão e limitações
+  required: true
+  purpose: respostas às perguntas de pesquisa
+  suggested_archetypes:
+  - two_column
+  - bullets
+  slides:
+  - 1
+  - 3
+- id: contribuicoes
+  name: Contribuições e publicações
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: futuros
+  name: Trabalhos futuros
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: agradecimentos
+  name: Agradecimentos
+  required: false
+  purpose: ''
+  suggested_archetypes:
+  - statement
+  slides:
+  - 0
+  - 1
+- id: referencias
+  name: Referências principais
+  required: false
+  purpose: ''
+  suggested_archetypes:
+  - references
+  slides:
+  - 0
+  - 2
+- id: perguntas
+  name: Perguntas
+  required: true
+  purpose: ''
+  suggested_archetypes:
+  - qa
+  slides:
+  - 1
+  - 1
+principles:
+- A contribuição aparece cedo e é retomada no fim
+- Cada resultado responde a uma pergunta de pesquisa
+- Slides de reserva (backup) para perguntas prováveis da banca
+pitfalls:
+- fundamentação longa demais
+- resultados sem discussão
+- não antecipar a pergunta óbvia da banca

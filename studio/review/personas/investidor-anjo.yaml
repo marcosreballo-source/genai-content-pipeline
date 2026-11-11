@@ -1,0 +1,37 @@
+id: investidor-anjo
+name: Investidor(a)-anjo, genérico
+context: Investe cedo, aposta no time e em sinais iniciais; valoriza clareza e honestidade sobre riscos.
+goals:
+- confiar no time
+- ver primeiros sinais de demanda
+priorities:
+  persuasion: 0.35
+  narrative: 0.25
+  evidence: 0.2
+  audience: 0.2
+rubric:
+- id: R1
+  text: Time e execução
+  weight: 0.35
+- id: R2
+  text: Problema e primeiros clientes
+  weight: 0.3
+- id: R3
+  text: Clareza do plano
+  weight: 0.2
+- id: R4
+  text: Ask
+  weight: 0.15
+typical_questions:
+- Como você conheceu esse problema?
+- O que aprendeu com os primeiros clientes?
+red_flags:
+- projeções irreais
+- ignorar riscos
+tone: próximo, prático
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

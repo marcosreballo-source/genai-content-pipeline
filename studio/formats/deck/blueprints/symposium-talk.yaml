@@ -1,0 +1,131 @@
+id: symposium-talk
+name: Apresentação de paper em simpósio
+contexts:
+- simpósios
+- workshops
+- conferências
+duration_rule:
+  slides_per_min: 1.0
+  min: 10
+  max: 22
+panel_default: simposio-paper
+notes_required: true
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: título, autores, afiliações, evento
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: motivacao
+  name: Motivação
+  required: true
+  purpose: por que o problema importa
+  suggested_archetypes:
+  - statement
+  - big_number
+  - image
+  slides:
+  - 1
+  - 2
+- id: problema
+  name: Problema e pergunta
+  required: true
+  purpose: pergunta de pesquisa explícita
+  suggested_archetypes:
+  - statement
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: contribuicoes
+  name: Contribuições
+  required: true
+  purpose: 2 a 4 contribuições
+  suggested_archetypes:
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: relacionados
+  name: Posicionamento
+  required: false
+  purpose: o que existe e a lacuna
+  suggested_archetypes:
+  - comparison
+  - table
+  slides:
+  - 0
+  - 2
+- id: metodo
+  name: Método
+  required: true
+  purpose: a ideia central visual
+  suggested_archetypes:
+  - diagram
+  - process
+  - equation
+  slides:
+  - 1
+  - 4
+- id: setup
+  name: Setup experimental
+  required: true
+  purpose: dados, baselines, métricas
+  suggested_archetypes:
+  - table
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: resultados
+  name: Resultados
+  required: true
+  purpose: principais achados
+  suggested_archetypes:
+  - chart
+  - table
+  - image
+  slides:
+  - 1
+  - 5
+- id: discussao
+  name: Discussão e limitações
+  required: true
+  purpose: ameaças à validade
+  suggested_archetypes:
+  - two_column
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: conclusao
+  name: Mensagem final
+  required: true
+  purpose: o que levar para casa
+  suggested_archetypes:
+  - statement
+  - bullets
+  slides:
+  - 1
+  - 1
+- id: perguntas
+  name: Perguntas
+  required: false
+  purpose: contato e link do paper
+  suggested_archetypes:
+  - qa
+  slides:
+  - 0
+  - 1
+principles:
+- A ideia central visível em 2 minutos
+- Um resultado principal com destaque
+- Contato e link do paper no fim
+pitfalls:
+- copiar o paper para os slides
+- tabelas ilegíveis
+- estourar o tempo da sessão

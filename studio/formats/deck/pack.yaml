@@ -1,0 +1,20 @@
+id: deck
+name: Apresentações (PowerPoint editável e Beamer)
+status: pronto
+outputs: [pptx, pdf (via LibreOffice), pdf (Beamer)]
+job_files: [brief.yaml, outline.yaml, plan.yaml, "spec/Uxx.yaml", assets/, build/, review/]
+spec_reference: formats/deck/archetypes.md          # gerado por: mf_deck.py archetypes --md
+writing_rules: formats/deck/writing_rules.md
+blueprints: formats/deck/blueprints/
+commands:
+  new: python studio/scripts/mf_deck.py new <job> --blueprint <id> [--kit <kit> | --template <id>]
+  plan: python studio/scripts/mf_deck.py plan <job>
+  validate_unit: python studio/scripts/mf_deck.py validate <job> --unit <Uxx>
+  build: python studio/scripts/mf_deck.py build <job>
+  build_beamer: python studio/scripts/mf_latex.py beamer <job> [--theme metropolis|default|<template>]
+  preview: python studio/scripts/mf_deck.py preview <job>
+  qa: python studio/scripts/mf_deck.py qa <job>
+  notes: python studio/scripts/mf_deck.py notes <job>
+unit_rule: "até 6 slides e ~900 palavras estimadas por unidade; máximo rígido 1200"
+review_default_lenses: [narrative, visual, audience, evidence]
+requires: {python: [pyyaml, python-pptx, pillow, matplotlib], programs: [soffice], optional: [mmdc, pdftoppm, pdflatex]}

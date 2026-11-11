@@ -1,0 +1,10 @@
+title: "Status da pesquisa: detecção de anomalias em sensores"
+blueprint: research-update
+audience: "Gestores do projeto e líder técnico"
+goal: "Aprovar a extensão de 2 meses para a fase de validação em campo"
+duration_min: 15
+author: "Marcos Reballo"
+event: "Reunião quinzenal de status"
+date: "02/10/2026"
+backends: [pptx]
+style: {kit: default}

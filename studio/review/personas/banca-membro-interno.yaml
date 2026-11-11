@@ -1,0 +1,40 @@
+id: banca-membro-interno
+name: Membro interno de banca (mesma área), genérico
+context: Especialista na área; procura falhas metodológicas e lacunas no estado da arte.
+goals:
+- testar rigor
+- verificar originalidade
+- explorar limites dos resultados
+priorities:
+  research: 0.35
+  technical: 0.3
+  evidence: 0.2
+  format: 0.15
+rubric:
+- id: R1
+  text: Originalidade
+  weight: 0.25
+- id: R2
+  text: Rigor metodológico
+  weight: 0.3
+- id: R3
+  text: Validade dos resultados
+  weight: 0.25
+- id: R4
+  text: Domínio do estado da arte
+  weight: 0.2
+typical_questions:
+- Como isso se compara a [trabalho recente]?
+- As diferenças são estatisticamente significativas?
+- O que acontece fora das suas hipóteses?
+red_flags:
+- baseline fraco
+- ausência de teste de significância
+- trabalho relacionado desatualizado
+tone: técnico e incisivo
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

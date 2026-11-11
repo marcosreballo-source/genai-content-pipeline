@@ -1,0 +1,125 @@
+id: pitch-competition
+name: Pitch de competição de startups (3 a 7 min)
+contexts:
+- competições
+- demo days
+duration_rule:
+  slides_per_min: 2.0
+  min: 8
+  max: 14
+panel_default: competicao-startup
+notes_required: true
+sections:
+- id: capa
+  name: Capa
+  required: true
+  purpose: nome e frase-resumo do que fazem
+  suggested_archetypes:
+  - title
+  slides:
+  - 1
+  - 1
+- id: problema
+  name: Problema
+  required: true
+  purpose: dor concreta, quem sofre e quanto custa
+  suggested_archetypes:
+  - statement
+  - big_number
+  - quote
+  slides:
+  - 1
+  - 2
+  must_include:
+  - evidência da dor (dado ou entrevista)
+- id: solucao
+  name: Solução
+  required: true
+  purpose: o que fazem, em uma frase e uma imagem
+  suggested_archetypes:
+  - image
+  - statement
+  - process
+  slides:
+  - 1
+  - 2
+- id: produto
+  name: Produto/demo
+  required: false
+  purpose: mostrar funcionando
+  suggested_archetypes:
+  - image
+  - diagram
+  slides:
+  - 0
+  - 2
+- id: mercado
+  name: Mercado
+  required: true
+  purpose: recorte realista (TAM/SAM/SOM)
+  suggested_archetypes:
+  - kpis
+  - chart
+  slides:
+  - 1
+  - 1
+- id: modelo
+  name: Modelo de negócio
+  required: true
+  purpose: quem paga, quanto e como
+  suggested_archetypes:
+  - two_column
+  - table
+  - kpis
+  slides:
+  - 1
+  - 1
+- id: tracao
+  name: Tração e validação
+  required: true
+  purpose: provas proporcionais ao estágio
+  suggested_archetypes:
+  - chart
+  - timeline
+  - kpis
+  - quote
+  slides:
+  - 1
+  - 2
+- id: concorrencia
+  name: Concorrência e diferencial
+  required: true
+  purpose: por que vocês vencem
+  suggested_archetypes:
+  - comparison
+  - table
+  slides:
+  - 1
+  - 1
+- id: equipe
+  name: Equipe
+  required: true
+  purpose: por que este time executa
+  suggested_archetypes:
+  - team
+  slides:
+  - 1
+  - 1
+- id: ask
+  name: Pedido
+  required: true
+  purpose: o que querem da banca/investidor e para quê
+  suggested_archetypes:
+  - closing
+  slides:
+  - 1
+  - 1
+principles:
+- Uma ideia por slide, cerca de 30 segundos cada
+- Mostre números e produto em vez de adjetivos
+- Termine com o pedido
+- Respeite o tempo do edital à risca
+pitfalls:
+- mercado top-down inflado
+- slide de tecnologia longo
+- pedido vago

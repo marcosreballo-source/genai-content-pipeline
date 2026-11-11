@@ -1,0 +1,23 @@
+id: format
+name: Conformidade de formato
+question: Cumpre o modelo e as regras externas exigidas?
+applies_to:
+- deck
+- document
+- exam
+criteria:
+- id: FMT-1
+  text: Segue o template/modelo exigido (instituição, evento, journal, disciplina)
+  severity_hint: blocker
+- id: FMT-2
+  text: Respeita limites de páginas, slides, tempo ou palavras
+  severity_hint: blocker
+- id: FMT-3
+  text: Normas de citação e referência exigidas (ABNT, IEEE, ACM...)
+  severity_hint: major
+- id: FMT-4
+  text: Seções obrigatórias presentes
+  severity_hint: major
+- id: FMT-5
+  text: Metadados corretos (autores, afiliação, data, contato)
+  severity_hint: minor

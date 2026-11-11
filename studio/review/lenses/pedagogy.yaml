@@ -1,0 +1,27 @@
+id: pedagogy
+name: Desenho de aprendizagem
+question: Quem estuda por este material aprende o que deveria?
+applies_to:
+- deck
+- document
+- notebook
+- exam
+criteria:
+- id: PED-1
+  text: Objetivo de aprendizagem claro e observável para o trecho
+  severity_hint: major
+- id: PED-2
+  text: Pré-requisitos apresentados antes do uso
+  severity_hint: blocker
+- id: PED-3
+  text: Progressão do simples ao complexo; um conceito novo por vez
+  severity_hint: major
+- id: PED-4
+  text: Exemplo concreto e prática com feedback para cada conceito central
+  severity_hint: major
+- id: PED-5
+  text: Carga cognitiva adequada (densidade, jargão, ritmo)
+  severity_hint: minor
+- id: PED-6
+  text: Avaliação mede o que foi ensinado (alinhamento objetivo-atividade-avaliação)
+  severity_hint: major

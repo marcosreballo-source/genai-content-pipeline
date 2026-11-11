@@ -1,0 +1,21 @@
+id: defesa-tese
+name: Defesa de dissertação/tese
+personas:
+- id: banca-membro-interno
+  weight: 2
+- id: banca-membro-externo
+  weight: 2
+- id: orientador
+  weight: 1
+lenses:
+- research
+- technical
+- narrative
+- evidence
+- delivery
+- format
+overview_lenses:
+- narrative
+- research
+max_majors: 3
+calibration_hint: Calibre com o regimento do programa, a tese e arguições anteriores da banca.

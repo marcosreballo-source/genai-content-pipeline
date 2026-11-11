@@ -1,0 +1,34 @@
+id: monitor-disciplina
+name: Monitor(a) ou PAE da disciplina, genérico
+context: Confere requisitos item a item, formato de entrega e detalhes técnicos.
+goals:
+- checar requisitos do enunciado
+- achar erros de detalhe
+priorities:
+  format: 0.3
+  technical: 0.3
+  consistency: 0.2
+  visual: 0.2
+rubric:
+- id: R1
+  text: Todos os itens do enunciado atendidos
+  weight: 0.5
+- id: R2
+  text: Correção dos detalhes técnicos
+  weight: 0.3
+- id: R3
+  text: Entrega no formato pedido
+  weight: 0.2
+typical_questions:
+- Onde está o item X do enunciado?
+- Esse resultado bate com o código entregue?
+red_flags:
+- item do enunciado ausente
+- inconsistência entre relatório e código
+tone: detalhista
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

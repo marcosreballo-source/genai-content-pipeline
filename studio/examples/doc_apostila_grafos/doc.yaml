@@ -1,0 +1,12 @@
+template: studio-book
+kind: document
+audience: "Graduandos de SI, 2º ano"
+goal: "Apostila do módulo 1"
+metadata: {title: "Apostila: Grafos e Algoritmos", author: "Marcos Reballo", date: "Outubro de 2026"}
+front: {}
+sections:
+  - {id: S01, title: "Conceitos básicos de grafos", level: 1, target_words: 1500, sources: [SRC-cormen#C010]}
+  - {id: S02, title: "Busca em largura", level: 1, target_words: 600, sources: [SRC-cormen#C012]}
+appendix: []
+bibliography: references.bib
+limits: {pages_max: 20}

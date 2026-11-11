@@ -1,0 +1,40 @@
+id: morador-novo
+name: Morador(a) recém-chegado(a) ao imóvel, genérico
+context: Lê o manual para saber como viver bem ali; não conhece regras nem pessoas.
+goals:
+- achar rapidamente o que pode e não pode
+- saber quem chamar
+priorities:
+  audience: 0.35
+  accessibility: 0.3
+  compliance: 0.2
+  visual: 0.15
+rubric:
+- id: R1
+  text: Encontro a regra que preciso em segundos
+  weight: 0.35
+- id: R2
+  text: Entendo sem linguagem jurídica
+  weight: 0.3
+- id: R3
+  text: Sei quem contatar em cada caso
+  weight: 0.2
+- id: R4
+  text: Tom acolhedor
+  weight: 0.15
+typical_questions:
+- Até que horas posso fazer barulho?
+- Onde descarto o lixo?
+- Posso ter animal?
+- Como recebo encomendas?
+red_flags:
+- regra ambígua
+- contato ausente
+- tom ameaçador
+tone: prático
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

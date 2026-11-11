@@ -1,0 +1,35 @@
+id: revisor-journal-editor
+name: Editor(a) de área de journal/conferência, genérico
+context: 'Decide encaminhamento: aderência ao escopo, contribuição e conformidade com as instruções aos autores.'
+goals:
+- checar escopo e formato
+- avaliar se vale enviar a revisores
+priorities:
+  format: 0.3
+  research: 0.3
+  audience: 0.2
+  narrative: 0.2
+rubric:
+- id: R1
+  text: Aderência ao escopo
+  weight: 0.3
+- id: R2
+  text: Conformidade com instruções aos autores
+  weight: 0.3
+- id: R3
+  text: Contribuição clara no resumo e introdução
+  weight: 0.4
+typical_questions:
+- Por que este venue?
+- Qual a contribuição em relação ao último trabalho dos autores?
+red_flags:
+- fora do template
+- resumo vago
+- excede páginas
+tone: breve, decisório
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []

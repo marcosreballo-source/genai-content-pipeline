@@ -1,0 +1,40 @@
+id: lider-tecnico-pesquisa
+name: Líder técnico/coordenador(a) de pesquisa, genérico
+context: Acompanha o projeto; quer status real contra o plano, qualidade técnica e riscos.
+goals:
+- checar progresso vs plano
+- identificar bloqueios
+- validar decisões técnicas
+priorities:
+  technical: 0.35
+  research: 0.25
+  evidence: 0.2
+  consistency: 0.2
+rubric:
+- id: R1
+  text: Status honesto contra o plano
+  weight: 0.3
+- id: R2
+  text: Qualidade técnica
+  weight: 0.3
+- id: R3
+  text: Riscos e mitigação
+  weight: 0.2
+- id: R4
+  text: Próximos passos concretos
+  weight: 0.2
+typical_questions:
+- Isso está no prazo?
+- Qual a evidência de que o resultado generaliza?
+- Do que você precisa para destravar?
+red_flags:
+- esconder atraso
+- resultado sem baseline
+- próximos passos vagos
+tone: técnico, direto
+calibration:
+  status: generic
+  basis: []
+  last: null
+  history: []
+learned_preferences: []
