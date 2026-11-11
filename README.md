@@ -68,12 +68,14 @@ Os projetos abaixo foram descontinuados pela empresa e são publicados com autor
 
 | Projeto | Problema | O que construí | Repositório |
 |---|---|---|---|
-| **Gerador de grafos de entrega** | Criar instâncias de roteamento realistas (pesos da rua, não distância em linha reta) para qualquer cidade | A partir de um CD e de pontos de entrega, gera o grafo dirigido da malha viária (OSRM/OSM), resolve as rotas com OR-Tools (CVRPTW) e mostra tudo num painel sobre o mapa | [delivery-graph-builder](https://github.com/marcosreballo-source/delivery-graph-builder) |
+| **Gerador de grafos de entrega** | Criar instâncias de roteamento realistas (pesos da rua, não distância em linha reta) para qualquer cidade | A partir de um CD e de pontos de entrega, gera o grafo dirigido da malha viária (OSRM/OSM), resolve as rotas com OR-Tools (CVRPTW) e mostra tudo num painel sobre o mapa ([demo](https://delivery-graph-builder-canoas.streamlit.app/)) | [delivery-graph-builder](https://github.com/marcosreballo-source/delivery-graph-builder) |
 | **Crawler de tempos de trajeto** | Medir quanto a mesma viagem custa em cada horário, sem estourar o custo da API do Google Maps | Coleta 24 h por semanas via Routes API, com cache, trava de orçamento e janelas de pico. Roda numa VM ou em Slurm + Apptainer | [route-time-crawler](https://github.com/marcosreballo-source/route-time-crawler) |
 | **smlaunch** | Treinos em AWS SageMaker sem padrão de lançamento, versionamento e controle de custo | Framework com CLI para lançar, acompanhar, baixar artefatos, importar no MLflow e auditar custos a partir de um YAML. 29 testes | [sagemaker-training-launcher](https://github.com/marcosreballo-source/sagemaker-training-launcher) |
 | **QGAT** | Heurísticas de roteamento aprendidas com redes neurais híbridas clássico-quânticas | Graph Attention com camadas quânticas (PennyLane) treinado por RL, com 49 configs de ablação | [quantum-routing-research/qgat](https://github.com/marcosreballo-source/quantum-routing-research/tree/main/qgat) |
 | **QAOA multiobjetivo** | Equilibrar vários objetivos (distância, tempo, custo) em TSP/VRP | Formulações QUBO multiobjetivo e execuções em hardware IBM | [quantum-routing-research/qaoa-multiobjective](https://github.com/marcosreballo-source/quantum-routing-research/tree/main/qaoa-multiobjective) |
 | **Gêmeo digital de hub** (proposta) | A escolha da localização de hubs dependia de parâmetros pouco confiáveis para a área de negócios | Levantamento de requisitos e de dados para um gêmeo digital com custos fiscais e de frota | sem código |
+
+Na universidade, levei do mockup ao painel funcional o projeto de **monitoramento da rede de frio de vacinas nas UBS de São Carlos**, com alerta antecipado por tendência ([demo](https://vaccine-cold-chain-monitor.streamlit.app/) · [vaccine-cold-chain-monitor](https://github.com/marcosreballo-source/vaccine-cold-chain-monitor)).
 
 
 
