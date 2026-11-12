@@ -1,7 +1,5 @@
 # GenAI Content Pipeline: AcademicOS + Studio
 
-> **Rascunho.** Primeira versão do README, ainda a revisar.
-
 Este repositório reúne um sistema multiagente que produz conteúdo acadêmico e técnico: relatórios, apresentações, documentos LaTeX e revisões bibliográficas. Ele foi pensado para rodar com um LLM de janela de resposta curta (Gemini no Antigravity IDE) e mesmo assim entregar documentos longos e confiáveis.
 
 A ideia central é que **o modelo nunca escreve o arquivo final**. O LLM só preenche especificações curtas e validáveis, como YAML e fragmentos de texto. Scripts Python determinísticos montam, renderizam e auditam o resultado.
@@ -55,10 +53,12 @@ flowchart LR
 ## Como rodar
 
 ```bash
-python -m venv .venv && .venv/Scripts/pip install -r requirements.txt   # TODO: gerar requirements enxuto
-python studio/scripts/studio_doctor.py        # diagnóstico do ambiente
-python studio/scripts/tests/run_tests.py      # 11 testes automáticos
+python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
+python studio/scripts/studio_doctor.py        # diagnóstico do ambiente (Python e ferramentas externas)
+python studio/scripts/tests/run_tests.py      # 11 testes; prévia de slides e Beamer são pulados sem LibreOffice/LaTeX
 ```
+
+Renderizar decks e documentos também exige ferramentas externas: LibreOffice (prévia dos slides), uma distribuição LaTeX com `latexmk` e Node.js com Mermaid CLI. O `studio_doctor.py` diz o que falta.
 
 Exemplos prontos estão em `studio/examples/`: um deck com os 22 arquétipos de slide e uma apostila em LaTeX.
 
@@ -68,7 +68,7 @@ Os projetos abaixo foram descontinuados pela empresa e são publicados com autor
 
 | Projeto | Problema | O que construí | Repositório |
 |---|---|---|---|
-| **Gerador de grafos de entrega** | Criar instâncias de roteamento realistas (pesos da rua, não distância em linha reta) para qualquer cidade | A partir de um CD e de pontos de entrega, gera o grafo dirigido da malha viária (OSRM/OSM), resolve as rotas com OR-Tools (CVRPTW) e mostra tudo num painel sobre o mapa ([demo](https://delivery-graph-builder-canoas.streamlit.app/)) | [delivery-graph-builder](https://github.com/marcosreballo-source/delivery-graph-builder) |
+| **Gerador de grafos de entrega** | Criar instâncias de roteamento realistas (pesos da rua, não distância em linha reta) para qualquer cidade | Transforma a malha de ruas do OpenStreetMap em grafo dirigido (cruzamentos e trechos, com altitude), encaixa as entregas nele, resolve as rotas com OR-Tools (CVRPTW) e mostra no mapa distância, horas ao volante e subida acumulada ([demo](https://delivery-graph-builder-canoas.streamlit.app/)) | [delivery-graph-builder](https://github.com/marcosreballo-source/delivery-graph-builder) |
 | **Crawler de tempos de trajeto** | Medir quanto a mesma viagem custa em cada horário, sem estourar o custo da API do Google Maps | Coleta 24 h por semanas via Routes API, com cache, trava de orçamento e janelas de pico. Roda numa VM ou em Slurm + Apptainer | [route-time-crawler](https://github.com/marcosreballo-source/route-time-crawler) |
 | **smlaunch** | Treinos em AWS SageMaker sem padrão de lançamento, versionamento e controle de custo | Framework com CLI para lançar, acompanhar, baixar artefatos, importar no MLflow e auditar custos a partir de um YAML. 29 testes | [sagemaker-training-launcher](https://github.com/marcosreballo-source/sagemaker-training-launcher) |
 | **QGAT** | Heurísticas de roteamento aprendidas com redes neurais híbridas clássico-quânticas | Graph Attention com camadas quânticas (PennyLane) treinado por RL, com 49 configs de ablação | [quantum-routing-research/qgat](https://github.com/marcosreballo-source/quantum-routing-research/tree/main/qgat) |
