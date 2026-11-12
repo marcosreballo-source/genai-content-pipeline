@@ -56,7 +56,7 @@ def main():
 > Este notebook acompanha passo a passo os slides da apresentação. Aqui você construirá, visualizará e simulará circuitos quânticos no **Qiskit 2.x**, explorará algoritmos clássicos, simulará ruído de hardware real e resolverá problemas de otimização combinatória com **VQE** e **QAOA**.
 >
 > 🌐 **Conecte-se e acompanhe pesquisas:**
-> - [LinkedIn: linkedin.com/in/marcos-reballo](https://www.linkedin.com/in/marcos-reballo/)
+> - [LinkedIn: linkedin.com/in/marcos-vinicius-reballo](https://www.linkedin.com/in/marcos-vinicius-reballo/)
 > - Aplicações práticas em **Otimização de Portfólio, Detecção de Fraudes, Logística e Algoritmos Quânticos Híbridos**.
 
 ---
@@ -460,7 +460,7 @@ Parabéns por concluir o laboratório prático da Aula 02!
 
 ### 📝 Check-in Final:
 - Não se esqueça de preencher o **Forms Pós-Aula** para computar sua presença e mensurar seu ganho de aprendizado!
-- **Conecte-se com o instrutor:** [linkedin.com/in/marcos-reballo](https://www.linkedin.com/in/marcos-reballo/)""")
+- **Conecte-se com o instrutor:** [linkedin.com/in/marcos-vinicius-reballo](https://www.linkedin.com/in/marcos-vinicius-reballo/)""")
     ]
 
     exec_globals = {"plt": plt}
